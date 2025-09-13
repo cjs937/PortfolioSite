@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace PortfolioSource.Controllers
 {    public class TestPagesController : Controller
     {
-        [HttpGet]
         public IActionResult TestPage()
         {
             return View();

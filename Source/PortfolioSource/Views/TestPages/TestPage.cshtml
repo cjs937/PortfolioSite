@@ -1,9 +1,23 @@
 @{
     ViewData["Title"] = "Test!";
 }
-<div id="randomNumber"></div>
 
 <div class="text-center">
     <h1 class="display-4">This is a test page</h1>
-    <h2 class="display-6">Here is a random number every 2 seconds: </h2>
+    <h2 class="display-6">Here is a random number every 2 seconds:</h2>
+    <div id="randomNumber"></div
 </div>
+
+<script>
+    function getRandomNumber() {
+        fetch("/TestPages/RandomNumber")
+        .then(response => response.json())
+        .then(num => {document.getElementById("randomNumber").textContent = num}); // Random number between 1 and 100
+    }
+
+    // Update the random number every 2 seconds (2000 milliseconds)
+    setInterval(getRandomNumber, 2000);
+
+    // Initial call to display a number immediately on page load
+    getRandomNumber();
+</script>
