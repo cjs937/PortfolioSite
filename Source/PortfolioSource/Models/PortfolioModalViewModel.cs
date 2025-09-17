@@ -1,6 +1,6 @@
 namespace PortfolioSource.Models
 {
-    public class PortfolioModalViewModel
+    public class ModalViewModel
     {
         public string ModalID { get; set; } = "";
         public string Title { get; set; } = "EmptyTitle";

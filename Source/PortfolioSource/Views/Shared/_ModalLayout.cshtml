@@ -1,6 +1,6 @@
-@model PortfolioSource.Models.PortfolioModalViewModel
+@model PortfolioSource.Models.ModalViewModel
 
-<div class="portfolio-modal modal fade" id=@Model.ModalID tabindex="-1" aria-labelledby="PortfolioModal" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="@Model.ModalID" tabindex="-1" aria-labelledby="PortfolioModal" aria-hidden="true">
     <div class="modal-dialog @Model.SizeClass">
         <div class="modal-content">
             <div class="modal-header border-0">
@@ -19,7 +19,7 @@
                                 <div class="divider-custom-line"></div>
                             </div> 
                             <!--Image-->
-                            <img class="img-fluid rounded mb-5" src= @Model.ImageURL alt="..." />
+                            <img class="img-fluid rounded mb-5" src="@Model.ImageURL" alt="..." />
                             <!--Body-->
                             <div class= "modal-body">
                                 @Html.Raw(Model.BodyHtml)

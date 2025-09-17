@@ -57,12 +57,15 @@
     </div>
 </section>
 
-@Html.Partial("_ModalLayout", new PortfolioModalViewModel{
+@Html.Partial("_ModalLayout", new ModalViewModel{
     ModalID = "portfolioModal1",
     Title = "Title1",
     SizeClass = "modal-xl",
-    BodyHtml = "Testeststststststs",
-    ImageURL = "assets/img/portfolio/cabin.png"
+    ImageURL = "assets/img/portfolio/cabin.png",
+    BodyHtml = 
+        "<p1>Testeststststststs</p1><br/>" +
+            "<p2>More text here</p2><br/>" +
+                "<ul>TestList <li>Item1</li> <li>Item2</li> </ul>"
 })
 
 <!-- Portfolio Modal 2-->
