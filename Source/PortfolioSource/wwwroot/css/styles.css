@@ -10976,6 +10976,10 @@ html {
   font-size: 2.75rem;
   line-height: 2.75rem;
 }
+.masthead .masthead-heading-padded {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+}
 .masthead .masthead-subheading {
   font-size: 1.25rem;
 }

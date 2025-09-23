@@ -14,11 +14,15 @@
         <!-- Icon Divider-->
         <div class="divider-custom divider-light">
             <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-icon"><i class="fas fa-chess-king"></i></div>
             <div class="divider-custom-line"></div>
         </div>
         <!-- Masthead Subheading-->
-        <p class="masthead-subheading font-weight-light mb-0">Programmer - Designer - Gamer</p>
+        <p class="masthead-heading-padded font-weight-light mb-0">Full-Stack Development</p></br>
+        <p class="masthead-subheading font-weight-light mb-0">Systems</p></br>
+        <p class="masthead-subheading font-weight-light mb-0">Tools</p></br>
+        <p class="masthead-subheading font-weight-light mb-0">Games</p>
+
     </div>
 </header>
 
@@ -41,7 +45,7 @@
                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                         <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                     </div>
-                    <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
+                    <img class="img-fluid" src="assets/img/SS/SSLogo.png" alt="..." />
                 </div>
             </div>
             <!-- Portfolio Item 2-->
@@ -53,58 +57,104 @@
                     <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
                 </div>
             </div>
+            <!-- Portfolio Item 3-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
+                </div>
+            </div>
+            <!-- Portfolio Item 4-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
+                </div>
+            </div>
+            <!-- Portfolio Item 5-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
+                </div>
+            </div>
+            <!-- Portfolio Item 6-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
+<!-- Portfolio Modal 1-->
 @Html.Partial("_ModalLayout", new ModalViewModel{
     ModalID = "portfolioModal1",
     Title = "",
     SizeClass = "modal-xl",
     ImageURL = "assets/img/SS/SSLogo.png",
     BodyHtml = 
-        "<h2>Game Engineer - Schell Games </h2><br/>" +
-            "<div class='badge text-bg-primary'>testbadge</div>" +
-                "<ul>TestList <li><h3>Item1</h3></br><p1>Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1</p1></li> <li>Item2</li> </ul>"
+        "<h2>Game Engineer</h2><br/>" +
+        "<div>" +
+            "<div class='badge text-bg-primary'>Schell Games</div>" +
+            "<div class='badge text-bg-primary'>VR</div>" +
+            "<div class='badge text-bg-primary'>C++</div>" +
+            "<div class='badge text-bg-primary'>Unreal Engine</div>" +
+            "<div class='badge text-bg-primary'>Perforce</div>" +
+            "<div class='badge text-bg-primary'>Jenkins</div>" +
+            "<div class='badge text-bg-primary'>Meta Quest</div>" +
+        "</div></br>" +
+        "<p1>Horror/Puzzle game where you, The Slayer, must break into the coffins of a fiendish vampire clan, and quietly disarm their traps without waking them.</p1>" +
+        "<ul style='list-style-type: none;'><h1>Key Contributions</h1>" +
+            "<li><h6>Cutscene Sequencing and Authoring Tools</h6></li>" +
+            "<li><h6>Noise and Disturbance Meter</h6></li>" +
+            "<li><h6>Vampire State Machines (Animation & Game State)</h6></li>" +
+            "<li><h6>FTUE Tutorial Routing</h6></li>" +
+            "<li><h6>Gameplay Analytics</h6></li>" +
+            "<li><h6>Tension Director System</h6></li>" +
+            "<li><h6>Gameplay Feedback (Haptics & Audio)</h6></li>" +
+        "</ul>"
 })
 
 <!-- Portfolio Modal 2-->
-<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-            <div class="modal-body text-center pb-5">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <!-- Portfolio Modal - Title-->
-                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
-                            <!-- Icon Divider-->
-                            <div class="divider-custom">
-                                <div class="divider-custom-line"></div>
-                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                <div class="divider-custom-line"></div>
-                            </div>
-                            <!-- Portfolio Modal - Image-->
-                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
-                            <!-- Portfolio Modal - Text-->
-                            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                            <button class="btn btn-primary" data-bs-dismiss="modal">
-                                <i class="fas fa-xmark fa-fw"></i>
-                                Close Window
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Click for <a href="@Url.Action("TestPage", "TestPages")">test page</a>.</p>
-    <span class="badge text-bg-primary">Primary</span>
+@Html.Partial("_ModalLayout", new ModalViewModel{
+    ModalID = "portfolioModal2",
+    Title = "",
+    SizeClass = "modal-xl",
+    ImageURL = "assets/img/SS/SSLogo.png",
+    BodyHtml = 
+        "<h2>Game Engineer</h2><br/>" +
+        "<div>" +
+            "<div class='badge text-bg-primary'>Schell Games</div>" +
+            "<div class='badge text-bg-primary'>VR</div>" +
+            "<div class='badge text-bg-primary'>C++</div>" +
+            "<div class='badge text-bg-primary'>Unreal Engine</div>" +
+            "<div class='badge text-bg-primary'>Perforce</div>" +
+            "<div class='badge text-bg-primary'>Jenkins</div>" +
+            "<div class='badge text-bg-primary'>Meta Quest</div>" +
+        "</div></br>" +
+        "<p1>Horror/Puzzle game where you, The Slayer, must break into the coffins of a fiendish vampire clan, and quietly disarm their traps without waking them.</p1>" +
+        "<ul style='list-style-type: none;'><h1>Key Contributions</h1>" +
+            "<li><h6>Cutscene Sequencing and Authoring Tools</h6></li>" +
+            "<li><h6>Noise and Disturbance Meter</h6></li>" +
+            "<li><h6>Vampire State Machines (Animation & Game State)</h6></li>" +
+            "<li><h6>FTUE Tutorial Routing</h6></li>" +
+            "<li><h6>Gameplay Analytics</h6></li>" +
+            "<li><h6>Tension Director System</h6></li>" +
+            "<li><h6>Gameplay Feedback (Haptics & Audio)</h6></li>" +
+        "</ul>"
+})
 
-</div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
