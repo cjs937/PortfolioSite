@@ -59,13 +59,13 @@
 
 @Html.Partial("_ModalLayout", new ModalViewModel{
     ModalID = "portfolioModal1",
-    Title = "Title1",
+    Title = "",
     SizeClass = "modal-xl",
-    ImageURL = "assets/img/portfolio/cabin.png",
+    ImageURL = "assets/img/SS/SSLogo.png",
     BodyHtml = 
-        "<p1>Testeststststststs</p1><br/>" +
-            "<p2>More text here</p2><br/>" +
-                "<ul>TestList <li>Item1</li> <li>Item2</li> </ul>"
+        "<h2>Game Engineer - Schell Games </h2><br/>" +
+            "<div class='badge text-bg-primary'>testbadge</div>" +
+                "<ul>TestList <li><h3>Item1</h3></br><p1>Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1Item1</p1></li> <li>Item2</li> </ul>"
 })
 
 <!-- Portfolio Modal 2-->
@@ -103,6 +103,7 @@
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Click for <a href="@Url.Action("TestPage", "TestPages")">test page</a>.</p>
+    <span class="badge text-bg-primary">Primary</span>
 
 </div>
     <!-- Bootstrap core JS-->
