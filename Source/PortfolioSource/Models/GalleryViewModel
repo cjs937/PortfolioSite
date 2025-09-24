@@ -1,0 +1,8 @@
+namespace PortfolioSource.Models
+{
+    public class GalleryViewModel
+    {
+        public List<string> ImageURLs { get; set; } = new List<string>();
+        public string GalleryTitle { get; set; } = "Gallery";
+    }
+}

@@ -11049,3 +11049,16 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+ul.diamond{
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+}
+
+ul.diamond li::before{
+  content: "♦";
+  color: #1abc9c;
+  position: absolute;
+  left: 0rem;
+}
