@@ -385,7 +385,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+  appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -443,7 +443,7 @@ legend + * {
 
 [type=search] {
   outline-offset: -2px;
-  -webkit-appearance: textfield;
+  appearance: button;
 }
 
 /* rtl:raw:
@@ -464,7 +464,7 @@ legend + * {
 
 ::file-selector-button {
   font: inherit;
-  -webkit-appearance: button;
+  appearance: button;
 }
 
 output {
@@ -11048,17 +11048,4 @@ html {
 
 .copyright {
   background-color: #1a252f;
-}
-
-ul.diamond{
-  list-style: none;
-  padding-left: 0;
-  position: relative;
-}
-
-ul.diamond li::before{
-  content: "♦";
-  color: #1abc9c;
-  position: absolute;
-  left: 0rem;
 }

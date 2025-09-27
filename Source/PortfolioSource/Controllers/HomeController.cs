@@ -18,9 +18,9 @@ namespace PortfolioSource.Controllers
 
         // public IActionResult GetGalleryURLS(string path = "")
         // {
-        //     var 
-        //     var GalleryModel = new GalleryViewModel{ GalleryTitle = "Project Gallery" };
-
+        //     var Files = ("1", "2", "3", "4", "5", "6", "7", "8", "9", "10");
+            
+        //     var GalleryModel = GalleryViewModel(Files, "Sample Gallery");
         //     return View(GalleryModel);
         // }
     }
