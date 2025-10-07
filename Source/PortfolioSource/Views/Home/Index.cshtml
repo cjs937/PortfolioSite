@@ -40,11 +40,13 @@
         </div>
         <!-- Portfolio Grid Items-->
         <div class="row justify-content-center">
+            
+
             <!-- Portfolio Item 1-->
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                     <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-dungeon fa-3x"></i></div>
                     </div>
                     <img class="img-fluid" src="assets/img/SS/SSLogo.png" alt="..." />
                 </div>
@@ -58,45 +60,43 @@
                     <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
                 </div>
             </div>
-            <!-- Portfolio Item 3-->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
-                </div>
-            </div>
-            <!-- Portfolio Item 4-->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
-                </div>
-            </div>
-            <!-- Portfolio Item 5-->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
-                </div>
-            </div>
-            <!-- Portfolio Item 6-->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
-                </div>
-            </div>
+          
         </div>
     </div>
 </section>
+
+
+
+@* <!-- Portfolio Modal 2-->
+@Html.Partial("_ModalLayout", new ModalViewModel{
+    ModalID = "portfolioModal2",
+    Title = "",
+    SizeClass = "modal-xl",
+    ImageURL = "assets/img/SS/SSLogo.png",
+    BodyIntro = 
+        "<h2>Game Engineer</h2><br/>" +
+        "<div>" +
+            "<div class='badge text-bg-primary'>Schell Games</div>" +
+            "<div class='badge text-bg-primary'>VR</div>" +
+            "<div class='badge text-bg-primary'>C++</div>" +
+            "<div class='badge text-bg-primary'>Unreal Engine</div>" +
+            "<div class='badge text-bg-primary'>Perforce</div>" +
+            "<div class='badge text-bg-primary'>Jenkins</div>" +
+            "<div class='badge text-bg-primary'>Meta Quest</div>" +
+            "<div class='badge text-bg-primary'>Valve Index</div>" +
+        "</div></br>" +
+        "<p1>Horror/Puzzle game where you, The Slayer, must break into the coffins of a fiendish vampire clan, and quietly disarm their traps without waking them.</p1>",
+    BodyMain =
+        "<ul style='list-style-type: none;'><h1>Key Contributions</h1>" +
+            "<li><h6>Cutscene Sequencing and Authoring Tools</h6></li>" +
+            "<li><h6>Noise and Disturbance Meter</h6></li>" +
+            "<li><h6>Vampire State Machines (Animation & Game State)</h6></li>" +
+            "<li><h6>FTUE Tutorial Routing</h6></li>" +
+            "<li><h6>Gameplay Analytics</h6></li>" +
+            "<li><h6>Tension Director System</h6></li>" +
+            "<li><h6>Feedback Systems (Haptics & Audio)</h6></li>" +
+        "</ul>"
+})
 
 <!-- Portfolio Modal 1-->
 @Html.Partial("_ModalLayout", new ModalViewModel{
@@ -127,36 +127,9 @@
             "<li><h6>Tension Director System</h6></li>" +
             "<li><h6>Feedback Systems (Haptics & Audio)</h6></li>" +
         "</ul>"
-})
+}) *@
 
-<!-- Portfolio Modal 2-->
-@Html.Partial("_ModalLayout", new ModalViewModel{
-    ModalID = "portfolioModal2",
-    Title = "",
-    SizeClass = "modal-xl",
-    ImageURL = "assets/img/SS/SSLogo.png",
-    BodyMain = 
-        "<h2>Game Engineer</h2><br/>" +
-        "<div>" +
-            "<div class='badge text-bg-primary'>Schell Games</div>" +
-            "<div class='badge text-bg-primary'>VR</div>" +
-            "<div class='badge text-bg-primary'>C++</div>" +
-            "<div class='badge text-bg-primary'>Unreal Engine</div>" +
-            "<div class='badge text-bg-primary'>Perforce</div>" +
-            "<div class='badge text-bg-primary'>Jenkins</div>" +
-            "<div class='badge text-bg-primary'>Meta Quest</div>" +
-        "</div></br>" +
-        "<p1>Horror/Puzzle game where you, The Slayer, must break into the coffins of a fiendish vampire clan, and quietly disarm their traps without waking them.</p1>" +
-        "<ul style='list-style-type: none;'><h1>Key Contributions</h1>" +
-            "<li><h6>Cutscene Sequencing and Authoring Tools</h6></li>" +
-            "<li><h6>Noise and Disturbance Meter</h6></li>" +
-            "<li><h6>Vampire State Machines (Animation & Game State)</h6></li>" +
-            "<li><h6>FTUE Tutorial Routing</h6></li>" +
-            "<li><h6>Gameplay Analytics</h6></li>" +
-            "<li><h6>Tension Director System</h6></li>" +
-            "<li><h6>Gameplay Feedback (Haptics & Audio)</h6></li>" +
-        "</ul>"
-})
+
 
 
 <!-- Bootstrap core JS-->

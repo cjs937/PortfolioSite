@@ -1,7 +1,9 @@
+using PortfolioSource.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<PortfolioService, PortfolioService>();
 
 var app = builder.Build();
 

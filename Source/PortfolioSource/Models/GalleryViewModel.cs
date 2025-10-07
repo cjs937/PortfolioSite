@@ -8,7 +8,5 @@ namespace PortfolioSource.Models
         //     GalleryTitle = galleryTitle;
         // }
 
-        public List<string> ImageURLs { get; set; } = new List<string>();
-        public string GalleryTitle { get; set; } = "Gallery";
     }
 }

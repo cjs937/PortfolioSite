@@ -1,0 +1,29 @@
+[
+    {
+        "ModalID": "SS",
+        "ModalSize": "modal-xl",
+        "ImageURL": "SSLogo.png",
+        "Title": "Game Engineer - Schell Games",
+        "Badges": 
+        [
+            {"Label": "VR", "Color": "primary"},
+            {"Label": "C++", "Color": "primary"},
+            {"Label": "Unreal Engine", "Color": "primary"},
+            {"Label": "Perforce", "Color": "primary"},
+            {"Label": "Jenkins", "Color": "primary"},
+            {"Label": "Meta Quest", "Color": "primary"},
+            {"Label": "Valve Index", "Color": "primary"}
+        ],
+        "Contributions" :
+        [
+            "Cutscene Sequencing and Authoring Tools",
+            "Noise and Disturbance Meter",
+            "Vampire State Machines (Animation & Game State)",
+            "FTUE Tutorial Routing",
+            "Gameplay Analytics",
+            "Tension Director System",
+            "Feedback Systems (Haptics & Audio)"
+        ],
+        "BodyIntro":"<p1>Horror/Puzzle game where you, The Slayer, must break into the coffins of a fiendish vampire clan, and quietly disarm their traps without waking them.</p1>"
+    }
+]

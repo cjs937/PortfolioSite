@@ -1,11 +1,17 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using PortfolioSource.Models;
-
+using PortfolioSource.Services;
 namespace PortfolioSource.Controllers
 {
     public class HomeController : Controller
     {
+        private PortfolioService PortfolioService;
+
+        public HomeController(PortfolioService PService)
+        {
+            PortfolioService = PService;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -16,12 +22,16 @@ namespace PortfolioSource.Controllers
             return View();
         }
 
-        // public IActionResult GetGalleryURLS(string path = "")
-        // {
-        //     var Files = ("1", "2", "3", "4", "5", "6", "7", "8", "9", "10");
-            
-        //     var GalleryModel = GalleryViewModel(Files, "Sample Gallery");
-        //     return View(GalleryModel);
-        // }
+        public IActionResult OpenModal(string ItemID = "")
+        {
+            var ModalData = PortfolioService.GetItemByID(ItemID);
+
+            if (ModalData.ModalID == "")
+            {
+                return NotFound();
+            }
+
+            return PartialView("_ModalLayout", ModalData);
+        }
     }
 }
