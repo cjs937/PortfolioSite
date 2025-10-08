@@ -2,19 +2,20 @@
     {
         "ModalID": "SS",
         "ModalSize": "modal-xl",
-        "ImageURL": "SSLogo.png",
-        "Title": "Game Engineer - Schell Games",
+        "ImageURL": "assets/img/SS/SSLogo.png",
+        "Title": "Silent Slayer",
         "Badges": 
-        [
-            {"Label": "VR", "Color": "primary"},
-            {"Label": "C++", "Color": "primary"},
-            {"Label": "Unreal Engine", "Color": "primary"},
-            {"Label": "Perforce", "Color": "primary"},
-            {"Label": "Jenkins", "Color": "primary"},
-            {"Label": "Meta Quest", "Color": "primary"},
-            {"Label": "Valve Index", "Color": "primary"}
-        ],
-        "Contributions" :
+        {
+            "VR": "primary",
+            "C++": "primary",
+            "Unreal Engine": "primary",
+            "Perforce": "primary",
+            "Jenkins": "primary",
+            "Meta Quest": "primary",
+            "Valve Index": "primary"
+        },
+        "Icon": "fas fa-dungeon fa-3x",
+        "Contributions":
         [
             "Cutscene Sequencing and Authoring Tools",
             "Noise and Disturbance Meter",

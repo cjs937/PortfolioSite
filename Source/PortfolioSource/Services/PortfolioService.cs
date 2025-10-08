@@ -18,7 +18,7 @@ namespace PortfolioSource.Services
 
         private List<PortfolioItemViewModel> GetPortfolioItems()
         {
-            var JsonPath = Path.Combine(Env.WebRootPath, "data", "PortfolioItems.json");
+            var JsonPath = Path.Combine(Env.WebRootPath, "data", "PortfolioData.json");
 
             if (!File.Exists(JsonPath))
             {
@@ -28,21 +28,32 @@ namespace PortfolioSource.Services
             var JsonString = File.ReadAllText(JsonPath);
             var PortfolioItems = System.Text.Json.JsonSerializer.Deserialize<List<PortfolioItemViewModel>>(JsonString);
 
+            if (PortfolioItems == null)
+            {
+                throw new Exception("Failed to deserialize PortfolioItems.json");
+            }
+
             return PortfolioItems;
         }
 
-        public PortfolioItemViewModel GetItemByID(string ItemID = "")
+        public PortfolioItemViewModel GetItemByID(string ItemID)
         {
+            Console.WriteLine("Getting Item By ID: " + ItemID);
             var ItemList = GetPortfolioItems();
 
             foreach (var item in ItemList)
             {
+                Console.WriteLine("Checking " + item.ModalID);
+
                 if (item.ModalID == ItemID)
                 {
+                    Console.WriteLine("Found " + ItemID + " returning..");
+
                     return item;
                 }
             }
 
+            Console.WriteLine(ItemID + "not found, returning empty item..");
             return new PortfolioItemViewModel();
         }
     }

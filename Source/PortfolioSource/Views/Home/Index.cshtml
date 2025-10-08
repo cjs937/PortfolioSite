@@ -39,9 +39,9 @@
             <div class="divider-custom-line"></div>
         </div>
         <!-- Portfolio Grid Items-->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="portfolioGrid">
             
-
+@* 
             <!-- Portfolio Item 1-->
             <div class="col-md-6 col-lg-4 mb-5">
                 <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
@@ -59,13 +59,20 @@
                     </div>
                     <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
                 </div>
-            </div>
+            </div> *@
           
         </div>
     </div>
+
+   <div class="portfolio-modal modal fade" id="modalShell" tabindex="-1" aria-hidden="true"></div>
+
+
+
 </section>
 
 
+
+<script src="~/js/portfolioModals.js"></script>
 
 @* <!-- Portfolio Modal 2-->
 @Html.Partial("_ModalLayout", new ModalViewModel{

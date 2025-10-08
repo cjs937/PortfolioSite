@@ -22,14 +22,18 @@ namespace PortfolioSource.Controllers
             return View();
         }
 
-        public IActionResult OpenModal(string ItemID = "")
+        public IActionResult OpenModal(string id)
         {
-            var ModalData = PortfolioService.GetItemByID(ItemID);
+            Console.WriteLine("Attempting to open modal: " + id);
+
+            var ModalData = PortfolioService.GetItemByID(id);
 
             if (ModalData.ModalID == "")
             {
                 return NotFound();
             }
+
+            Console.WriteLine("Building partial view for " + id);
 
             return PartialView("_ModalLayout", ModalData);
         }
