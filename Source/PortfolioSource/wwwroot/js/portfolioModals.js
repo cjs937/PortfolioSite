@@ -11,8 +11,8 @@ async function LoadPortfolioGrid() {
 
         const divPortfolioItem = document.createElement("div");
         divPortfolioItem.className = "portfolio-item mx-auto";
-        divPortfolioItem.setAttribute("data-bs-toggle", "modal");
-        divPortfolioItem.setAttribute("data-bs-target", item.ModalID);
+        divPortfolioItem.setAttribute("data-bs-toggle", "#modal");
+        divPortfolioItem.setAttribute("data-bs-target", "#" + item.ModalID);
         divPortfolioItem.setAttribute("id", item.ModalID);
 
         const divCaption = document.createElement("div");

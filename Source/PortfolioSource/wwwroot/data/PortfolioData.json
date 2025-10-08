@@ -26,5 +26,26 @@
             "Feedback Systems (Haptics & Audio)"
         ],
         "BodyIntro":"<p1>Horror/Puzzle game where you, The Slayer, must break into the coffins of a fiendish vampire clan, and quietly disarm their traps without waking them.</p1>"
+    },
+    {
+        "ModalID": "LR",
+        "ModalSize": "modal-xl",
+        "ImageURL": "assets/img/LR/Logo.jpg",
+        "Title": "Lost Recipes",
+        "Icon": "fas fa-drumstick-bite fa-3x"
+    },
+    {
+        "ModalID": "PC",
+        "ModalSize": "modal-xl",
+        "ImageURL": "assets/img/PC/Bird.png",
+        "Title": "Pleasant Cove",
+        "Icon": "fas fa-dove fa-3x"
+    },
+        {
+        "ModalID": "BR",
+        "ModalSize": "modal-xl",
+        "ImageURL": "assets/img/BR/Logo.png",
+        "Title": "Breakaway",
+        "Icon": "fas fa-soccer-ball fa-3x"
     }
 ]

@@ -23,28 +23,42 @@
                         <div class= "modal-body">
                             @Html.Raw(Model.BodyIntro)
                             <br/>
-                            <div id="carouselExample" class="carousel slide">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                    <img src="@Model.ImageURL" class="d-block w-100" alt="Carousel 1">
-                                    </div>
-                                    <div class="carousel-item">
-                                    <img src="@Model.ImageURL" class="d-block w-100" alt="Carousel 2">
-                                    </div>
-                                    <div class="carousel-item">
-                                    <img src="@Model.ImageURL" class="d-block w-100" alt="Carousel 3">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
 
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
+                            <!-- Carousel -->
+                            @if(Model.GalleryURLs.Count > 0)
+                            {
+                                <div id="modal-carousel" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        @foreach(var img in Model.GalleryURLs)
+                                        {
+                                            Console.WriteLine("Adding Carousel Image: " + img);
+
+                                            <div class="carousel-item @(img == Model.GalleryURLs[0] ? "active" : "")">
+                                                <img src="@img" class="d-block w-100" alt="Carousel Image">
+                                            </div>
+                                        }
+                                        @* <div class="carousel-item active">
+                                        <img src="@Model.ImageURL" class="d-block w-100" alt="Carousel 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                        <img src="@Model.ImageURL" class="d-block w-100" alt="Carousel 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                        <img src="@Model.ImageURL" class="d-block w-100" alt="Carousel 3">
+                                        </div> *@
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#modal-carousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+
+                                    <button class="carousel-control-next" type="button" data-bs-target="#modal-carousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            }
+
                         </div>
                         <br/>
 
