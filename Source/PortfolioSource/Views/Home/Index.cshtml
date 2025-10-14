@@ -18,12 +18,12 @@
             <div class="divider-custom-line"></div>
         </div>
         <!-- Masthead Subheading-->
-        <h1 class="masthead-heading-padded font-weight-light mb-0">Game Engineer</h1></br>
-     
+        <h1 class="masthead-heading-padded font-weight-light mb-0 text-center">Game Engineer</h1></br>
+        <ul class="no-bullets"
             <li><p class="masthead-subheading font-weight-light mb-0">Gameplay</p></li></br>
             <li><p class="masthead-subheading font-weight-light mb-0">Systems</p></li></br>
             <li><p class="masthead-subheading font-weight-light mb-0">Tools</p></li></br>
-   
+        </ul>
     </div>
 </header>
 
@@ -35,33 +35,14 @@
         <!-- Icon Divider-->
         <div class="divider-custom">
             <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-icon"><i class="fas fa-university"></i></div>
             <div class="divider-custom-line"></div>
         </div>
-        <!-- Portfolio Grid Items-->
-        <div class="row justify-content-center" id="portfolioGrid">
-            
-@* 
-            <!-- Portfolio Item 1-->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-dungeon fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/SS/SSLogo.png" alt="..." />
-                </div>
-            </div>
-            <!-- Portfolio Item 2-->
-            <div class="col-md-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                    </div>
-                    <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
-                </div>
-            </div> *@
-          
+
+        <!-- Portfolio Grid Items (Filled dynamically)-->
+        <div class="row justify-content-center" id="portfolioGrid">        
         </div>
+
     </div>
 
    <div class="portfolio-modal modal fade" id="modalShell" tabindex="-1" aria-hidden="true"></div>
@@ -70,74 +51,6 @@
 
 </section>
 
-
-
-<script src="~/js/portfolioModals.js"></script>
-
-@* <!-- Portfolio Modal 2-->
-@Html.Partial("_ModalLayout", new ModalViewModel{
-    ModalID = "portfolioModal2",
-    Title = "",
-    SizeClass = "modal-xl",
-    ImageURL = "assets/img/SS/SSLogo.png",
-    BodyIntro = 
-        "<h2>Game Engineer</h2><br/>" +
-        "<div>" +
-            "<div class='badge text-bg-primary'>Schell Games</div>" +
-            "<div class='badge text-bg-primary'>VR</div>" +
-            "<div class='badge text-bg-primary'>C++</div>" +
-            "<div class='badge text-bg-primary'>Unreal Engine</div>" +
-            "<div class='badge text-bg-primary'>Perforce</div>" +
-            "<div class='badge text-bg-primary'>Jenkins</div>" +
-            "<div class='badge text-bg-primary'>Meta Quest</div>" +
-            "<div class='badge text-bg-primary'>Valve Index</div>" +
-        "</div></br>" +
-        "<p1>Horror/Puzzle game where you, The Slayer, must break into the coffins of a fiendish vampire clan, and quietly disarm their traps without waking them.</p1>",
-    BodyMain =
-        "<ul style='list-style-type: none;'><h1>Key Contributions</h1>" +
-            "<li><h6>Cutscene Sequencing and Authoring Tools</h6></li>" +
-            "<li><h6>Noise and Disturbance Meter</h6></li>" +
-            "<li><h6>Vampire State Machines (Animation & Game State)</h6></li>" +
-            "<li><h6>FTUE Tutorial Routing</h6></li>" +
-            "<li><h6>Gameplay Analytics</h6></li>" +
-            "<li><h6>Tension Director System</h6></li>" +
-            "<li><h6>Feedback Systems (Haptics & Audio)</h6></li>" +
-        "</ul>"
-})
-
-<!-- Portfolio Modal 1-->
-@Html.Partial("_ModalLayout", new ModalViewModel{
-    ModalID = "portfolioModal1",
-    Title = "",
-    SizeClass = "modal-xl",
-    ImageURL = "assets/img/SS/SSLogo.png",
-    BodyIntro = 
-        "<h2>Game Engineer</h2><br/>" +
-        "<div>" +
-            "<div class='badge text-bg-primary'>Schell Games</div>" +
-            "<div class='badge text-bg-primary'>VR</div>" +
-            "<div class='badge text-bg-primary'>C++</div>" +
-            "<div class='badge text-bg-primary'>Unreal Engine</div>" +
-            "<div class='badge text-bg-primary'>Perforce</div>" +
-            "<div class='badge text-bg-primary'>Jenkins</div>" +
-            "<div class='badge text-bg-primary'>Meta Quest</div>" +
-            "<div class='badge text-bg-primary'>Valve Index</div>" +
-        "</div></br>" +
-        "<p1>Horror/Puzzle game where you, The Slayer, must break into the coffins of a fiendish vampire clan, and quietly disarm their traps without waking them.</p1>",
-    BodyMain =
-        "<ul style='list-style-type: none;'><h1>Key Contributions</h1>" +
-            "<li><h6>Cutscene Sequencing and Authoring Tools</h6></li>" +
-            "<li><h6>Noise and Disturbance Meter</h6></li>" +
-            "<li><h6>Vampire State Machines (Animation & Game State)</h6></li>" +
-            "<li><h6>FTUE Tutorial Routing</h6></li>" +
-            "<li><h6>Gameplay Analytics</h6></li>" +
-            "<li><h6>Tension Director System</h6></li>" +
-            "<li><h6>Feedback Systems (Haptics & Audio)</h6></li>" +
-        "</ul>"
-}) *@
-
-
-
-
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/portfolioModals.js"></script>
