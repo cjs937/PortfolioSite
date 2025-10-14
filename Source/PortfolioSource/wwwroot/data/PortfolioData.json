@@ -4,48 +4,95 @@
         "ModalSize": "modal-xl",
         "ImageURL": "assets/img/SS/SSLogo.png",
         "Title": "Silent Slayer",
-        "Badges": 
-        {
-            "VR": "primary",
-            "C++": "primary",
-            "Unreal Engine": "primary",
-            "Perforce": "primary",
-            "Jenkins": "primary",
-            "Meta Quest": "primary",
-            "Valve Index": "primary"
+        "Badges": {
+            "VR": "text-bg-primary",
+            "C++": "text-bg-primary",
+            "Unreal Engine": "text-bg-primary",
+            "Perforce": "text-bg-primary",
+            "Jenkins": "text-bg-primary",
+            "Meta Quest": "text-bg-primary",
+            "Valve Index": "text-bg-primary"
         },
         "Icon": "fas fa-dungeon fa-3x",
-        "Contributions":
-        [
-            "Cutscene Sequencing and Authoring Tools",
-            "Noise and Disturbance Meter",
-            "Vampire State Machines (Animation & Game State)",
-            "FTUE Tutorial Routing",
-            "Gameplay Analytics",
-            "Tension Director System",
-            "Feedback Systems (Haptics & Audio)"
-        ],
-        "BodyIntro":"<p1>Horror/Puzzle game where you, The Slayer, must break into the coffins of a fiendish vampire clan, and quietly disarm their traps without waking them.</p1>"
+        "Contributions": {
+            "Cutscene Sequencing and Authoring Tools": "",
+            "Noise and Disturbance Meter": "",
+            "Vampire State Machines (Animation & Game State)": "",
+            "FTUE Tutorial Routing": "",
+            "Gameplay Analytics": "",
+            "Tension Director System": "",
+            "Feedback Systems (Haptics & Audio)": ""
+        },
+        "BodyIntro": "<p1>Horror/Puzzle game where you, The Slayer, must break into the coffins of a fiendish vampire clan, and quietly disarm their traps without waking them. Be silent, and be precise, and you will overpower these slumbering beasts.</p1>",
+        "WebsiteURL": "https://schellgames.com/portfolio/silent-slayer"
     },
     {
         "ModalID": "LR",
         "ModalSize": "modal-xl",
         "ImageURL": "assets/img/LR/Logo.jpg",
         "Title": "Lost Recipes",
-        "Icon": "fas fa-drumstick-bite fa-3x"
+        "Icon": "fas fa-drumstick-bite fa-3x",
+        "Badges": {
+            "VR": "text-bg-primary",
+            "C++": "text-bg-primary",
+            "Unreal Engine": "text-bg-primary",
+            "Perforce": "text-bg-primary",
+            "Jenkins": "text-bg-primary",
+            "Meta Quest": "text-bg-primary"
+        },
+        "Contributions": {
+            "Bug fixes & tech support for recipe sequences": "",
+            "Performance optimization": "",
+            "Physics based interactions (Stirring, throwing, cutting, socketing)": "",
+            "Baking and steaming systems": ""
+        },
+        "BodyIntro": "<p1>Prepare authentic food in three historic kitchens in this relaxing cooking simulator. Travel throughout history to master traditional recipes and discover classic ingredients, tools, and techniques. Indulge your appetite for a unique chef training experience in this realistic and satisfying game.</p1>",
+        "WebsiteURL": "https://schellgames.com/portfolio/lost-recipes"
     },
     {
         "ModalID": "PC",
         "ModalSize": "modal-xl",
         "ImageURL": "assets/img/PC/Bird.png",
         "Title": "Pleasant Cove",
-        "Icon": "fas fa-dove fa-3x"
-    },
-        {
+        "Icon": "fas fa-dove fa-3x",
+        "Badges": {
+            "VR": "text-bg-primary",
+            "C++": "text-bg-primary",
+            "Unreal Engine": "text-bg-primary",
+            "Perforce": "text-bg-primary",
+            "Jenkins": "text-bg-primary",
+            "Penumbra REAL™": "text-bg-primary",
+            "Meta Quest": "text-bg-primary"
+        },
+        "Contributions": {
+            "Bird character AI, animation states": "",
+            "Xylophone & music box play along activity": "",
+            "Music box song authoring tools": "",
+            "Flash card activity systems and authoring tools": ""
+        },
+        "BodyIntro": "<p1>A VR-based rehabilitation experience that is both calming and relaxing. Provides structured tasks and useful tools to help therapists both challenge and motivate their patients to engage more fully in their therapy</p1>",
+        "WebsiteURL": "https://schellgames.com/portfolio/pleasant-cove"
+     },
+    {
         "ModalID": "BR",
         "ModalSize": "modal-xl",
         "ImageURL": "assets/img/BR/Logo.png",
-        "Title": "Breakaway",
-        "Icon": "fas fa-soccer-ball fa-3x"
+        "Title": "Breakaway!",
+        "Icon": "fas fa-soccer-ball fa-3x",
+        "Badges": {
+            "C#": "text-bg-primary",
+            "Unity": "text-bg-primary",
+            "Git": "text-bg-primary",
+            "IOS": "text-bg-primary",
+            "Android": "text-bg-primary"
+        },
+        "Contributions": {
+            "Bug fixes & tech support for recipe sequences": "",
+            "Performance optimization": "",
+            "Physics based interactions (Stirring, throwing, cutting, socketing)": "",
+            "Baking and steaming systems.": ""
+        },
+        "BodyIntro": "<p1>A visual novel style game about a boys's soccer team that is thrown into a whirlwind when their coach introduces Raina, the new female member, and tells them all to get along. With the soccer season on the horizon, it's up to the player to hone their team's skills and relationships, pick sides in arguments, and directly influence how warm their new teammate's welcoming will be.</p1>",
+        "WebsiteURL": "https://breakawaygame.champlain.edu/"
     }
 ]

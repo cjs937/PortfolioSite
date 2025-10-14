@@ -1,4 +1,5 @@
 @model PortfolioSource.Models.PortfolioItemViewModel
+<link rel="stylesheet" href="~/css/styles.css" />
 
 <div class="modal-dialog @Model.ModalSize">
     <div class="modal-content">
@@ -8,22 +9,38 @@
         <div class="modal-body text-center pb-5">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8">
+                    <div class="col-lg-10">
                         <!-- Portfolio Modal - Title-->
-                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">@Model.Title</h2>
+                        <h1 class="portfolio-modal-title text-secondary text-uppercase mb-0">@Model.Title</h1>
+                        <br/>
                         <!--Image-->
                         <img class="img-fluid rounded mb-5" src="@Model.ImageURL" alt="..." />
-                            <!-- Icon Divider -->
+                        <br/>
+                        <!-- Badges -->
+                        <div>
+                            @foreach(var badgePair in Model.Badges)
+                            {
+                                Console.WriteLine("Adding badge pair: " + badgePair.Key + " : " + badgePair.Value);
+
+                                <span class="badge @badgePair.Value m-1 p-2">@badgePair.Key</span>
+                            }
+                        </div>
+                        <br/>
+
+                            @* <!-- Icon Divider -->
                         <div class="divider-custom">
                             <div class="divider-custom-line"></div>
                             <!-- <div class="divider-custom-icon"><i class="fas fa-star"></i></div> -->
                             <div class="divider-custom-line"></div>
-                        </div> 
+                        </div>  *@
                         <!--Body-->
-                        <div class= "modal-body">
+                        <div class="modal-body">
                             @Html.Raw(Model.BodyIntro)
                             <br/>
+                            <br/>
+                        </div>
 
+                        <div>
                             <!-- Carousel -->
                             @if(Model.GalleryURLs.Count > 0)
                             {
@@ -37,33 +54,47 @@
                                                 <img src="@img" class="d-block w-100" alt="Carousel Image">
                                             </div>
                                         }
-                                        @* <div class="carousel-item active">
-                                        <img src="@Model.ImageURL" class="d-block w-100" alt="Carousel 1">
-                                        </div>
-                                        <div class="carousel-item">
-                                        <img src="@Model.ImageURL" class="d-block w-100" alt="Carousel 2">
-                                        </div>
-                                        <div class="carousel-item">
-                                        <img src="@Model.ImageURL" class="d-block w-100" alt="Carousel 3">
-                                        </div> *@
                                     </div>
+
                                     <button class="carousel-control-prev" type="button" data-bs-target="#modal-carousel" data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Previous</span>
                                     </button>
-
                                     <button class="carousel-control-next" type="button" data-bs-target="#modal-carousel" data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                         <span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
                             }
-
-                        </div>
                         <br/>
+                        </div>
 
+                        <div class="modal-body">
                         @Html.Raw(Model.BodyMain)
                         <br/>
+                        </div>
+
+                        <!-- Contributions List -->
+                        @if(Model.Contributions.Count > 0)
+                        {
+                            <h3>Contributions</h3>
+                            <ul class="no-bullets">
+                            @foreach(var contribution in Model.Contributions)
+                            {
+                                <li>
+                                    <h4><strong>@contribution.Key</strong></h4>
+
+                                    @if(!string.IsNullOrEmpty(contribution.Value))
+                                    {
+                                        <br/>
+                                        @Html.Raw(contribution.Value);
+                                        <br/>
+                                    }
+
+                                </li>
+                            }
+                            </ul>
+                        }
 
                         <button class="btn btn-primary" data-bs-dismiss="modal">
                             <i class="fas fa-xmark fa-fw"></i>
@@ -73,7 +104,10 @@
                 </div>
             </div>
         </div>
+
         <div class="modal-footer border-0">
             @Html.Raw(Model.Footer)
+        </div>
+
     </div>
 </div>

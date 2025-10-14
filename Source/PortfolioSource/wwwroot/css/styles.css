@@ -5364,6 +5364,7 @@ textarea.form-control-lg {
   position: relative;
   flex: 1 1 auto;
   padding: var(--bs-modal-padding);
+  font-size: 1.25em;
 }
 
 .modal-footer {
@@ -11050,6 +11051,6 @@ html {
   background-color: #1a252f;
 }
 
-.carousel-inner img {
-  margin: auto;
+ul.no-bullets {
+  list-style: none;
 }
