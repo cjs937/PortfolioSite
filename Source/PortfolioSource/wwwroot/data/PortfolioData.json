@@ -86,12 +86,13 @@
             "IOS": "text-bg-primary",
             "Android": "text-bg-primary"
         },
-        "Contributions": {
-            "Bug fixes & tech support for recipe sequences": "",
-            "Performance optimization": "",
-            "Physics based interactions (Stirring, throwing, cutting, socketing)": "",
-            "Baking and steaming systems.": ""
-        },
+      "Contributions": {
+        "Character placement and animation tools": "",
+        "Parsing game commands from narrative data": "",
+        "A* Pathfinding and AI decisionmaking": "",
+        "Build optimization and bug fixing": "",
+        "Loading and saving serialized player data": ""
+      },
         "BodyIntro": "<p1>A visual novel style game about a boys's soccer team that is thrown into a whirlwind when their coach introduces Raina, the new female member, and tells them all to get along. With the soccer season on the horizon, it's up to the player to hone their team's skills and relationships, pick sides in arguments, and directly influence how warm their new teammate's welcoming will be.</p1>",
         "WebsiteURL": "https://breakawaygame.champlain.edu/"
     }

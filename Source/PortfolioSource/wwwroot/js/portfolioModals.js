@@ -26,7 +26,7 @@ async function LoadPortfolioGrid() {
 
         const img = document.createElement("img");
         img.className = "img-fluid";
-        img.src = item.ImageURL || "assets/img/portfolio/cabin.png";
+        img.src = item.ImageURL || "";
         img.alt = item.Title || "...";
 
         divCaptionContent.appendChild(icon);

@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>@ViewData["Title"] - MySite</title>
+    <title>@ViewData["Title"] - Cory Smith</title>
             <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/img/icon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -26,8 +26,8 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" asp-controller="Home" asp-action="Index" asp-fragment="portfolioGrid">Portfolio</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" asp-controller="Home" asp-action="About">About</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" asp-controller="Home" asp-action="About" asp-fragment="contact">Contact</a></li>
-                </ul>
+@*                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" asp-controller="Home" asp-action="About" asp-fragment="contact">Contact</a></li>
+ *@                </ul>
             </div>
         </div>
     </nav>
@@ -37,7 +37,26 @@
     @RenderBody()
     </div>
 </body>
-<footer>
-    testsetesstesf
-</footer>
 </html>
+
+<footer class="footer text-center">
+        <p1>
+            This site was built with Razor and ASP.NET, using the <a href="https://startbootstrap.com/theme/freelancer" target="_blank">startbootstrap freelancer template.</a>
+            <a href="https://www.flaticon.com/free-icon/game-control_1722368">Controller icon made by Freepik</a>
+            <br/>
+            <a href="https://github.com/cjs937/PortfolioSite" target="_blank">Check out the source on Github!</a>
+        </p1>
+        <br/>
+        <div class="body text-center">
+            <a href="mailto:csmithdevmail@gmail.com"
+               target="_blank"
+               class="btn btn-social">
+                <i class="fas fa-inbox"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/csmithin/"
+               target="_blank"
+               class="btn btn-social">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+</footer>
