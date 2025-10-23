@@ -4,7 +4,6 @@ async function LoadPortfolioGrid() {
 
     const divGrid = document.getElementById("portfolioGrid");
 
-    // Example loop for each portfolio item
     jsonItems.forEach(item => {
         const divCol = document.createElement("div");
         divCol.className = "col-md-6 col-lg-4 mb-5";
