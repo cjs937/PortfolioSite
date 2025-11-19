@@ -11,7 +11,9 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
                         <!-- Portfolio Modal - Title-->
-                        <h1 class="portfolio-modal-title text-secondary text-uppercase mb-0">@Model.Title</h1>
+                        <h1 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                            <a class="title-link" href="@Model.WebsiteURL" target="_blank">@Model.Title</a>
+                        </h1>
                         <br/>
                         <!--Image-->
                         <img class="img-fluid rounded mb-5" src="@Model.ImageURL" alt="..." />
@@ -22,7 +24,7 @@
                             {
                                 Console.WriteLine("Adding badge pair: " + badgePair.Key + " : " + badgePair.Value);
 
-                                <span class="badge @badgePair.Value m-1 p-2">@badgePair.Key</span>
+                                <span class="badge @(badgePair.Value == "" ? "text-bg-secondary" : badgePair.Value) m-1 p-2">@badgePair.Key</span>
                             }
                         </div>
                         <br/>

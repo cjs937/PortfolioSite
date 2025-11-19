@@ -5,13 +5,12 @@
         "ImageURL": "assets/img/SS/SSLogo.png",
         "Title": "Silent Slayer",
         "Badges": {
-            "VR": "text-bg-primary",
-            "C++": "text-bg-primary",
-            "Unreal Engine": "text-bg-primary",
-            "Perforce": "text-bg-primary",
-            "Jenkins": "text-bg-primary",
-            "Meta Quest": "text-bg-primary",
-            "Valve Index": "text-bg-primary"
+            "Meta Quest": "bg-info",
+            "Valve Index": "bg-info",
+            "C++": "bg-success",
+            "Unreal Engine": "bg-success",
+            "Perforce": "",
+            "Jenkins": ""
         },
         "Icon": "fas fa-dungeon fa-3x",
         "Contributions": {
@@ -33,18 +32,17 @@
         "Title": "Lost Recipes",
         "Icon": "fas fa-drumstick-bite fa-3x",
         "Badges": {
-            "VR": "text-bg-primary",
-            "C++": "text-bg-primary",
-            "Unreal Engine": "text-bg-primary",
-            "Perforce": "text-bg-primary",
-            "Jenkins": "text-bg-primary",
-            "Meta Quest": "text-bg-primary"
+            "Meta Quest": "bg-info",
+            "C++": "bg-success",
+            "Unreal Engine": "bg-success",
+            "Perforce": "",
+            "Jenkins": ""
         },
         "Contributions": {
-            "Bug fixes & tech support for recipe sequences": "",
-            "Performance optimization": "",
             "Physics based interactions (Stirring, throwing, cutting, socketing)": "",
-            "Baking and steaming systems": ""
+            "Baking and steaming systems": "",
+            "Bug fixes & tech support for recipe sequences": "",
+            "Performance optimization": ""
         },
         "BodyIntro": "<p1>Prepare authentic food in three historic kitchens in this relaxing cooking simulator. Travel throughout history to master traditional recipes and discover classic ingredients, tools, and techniques. Indulge your appetite for a unique chef training experience in this realistic and satisfying game.</p1>",
         "WebsiteURL": "https://schellgames.com/portfolio/lost-recipes"
@@ -56,13 +54,11 @@
         "Title": "Pleasant Cove",
         "Icon": "fas fa-dove fa-3x",
         "Badges": {
-            "VR": "text-bg-primary",
-            "C++": "text-bg-primary",
-            "Unreal Engine": "text-bg-primary",
-            "Perforce": "text-bg-primary",
-            "Jenkins": "text-bg-primary",
-            "Penumbra REAL™": "text-bg-primary",
-            "Meta Quest": "text-bg-primary"
+            "Meta Quest": "bg-info",
+            "C++": "bg-success",
+            "Unreal Engine": "bg-success",
+            "Perforce": "",
+            "Jenkins": ""
         },
         "Contributions": {
             "Bird character AI, animation states": "",
@@ -77,14 +73,14 @@
         "ModalID": "BR",
         "ModalSize": "modal-xl",
         "ImageURL": "assets/img/BR/Logo.png",
-        "Title": "Breakaway!",
+        "Title": "Breakaway",
         "Icon": "fas fa-soccer-ball fa-3x",
         "Badges": {
-            "C#": "text-bg-primary",
-            "Unity": "text-bg-primary",
-            "Git": "text-bg-primary",
-            "IOS": "text-bg-primary",
-            "Android": "text-bg-primary"
+            "IOS": "bg-info",
+            "Android": "bg-info",
+            "C#": "bg-success",
+            "Unity": "bg-success",
+            "Git": ""
         },
       "Contributions": {
         "Character placement and animation tools": "",
