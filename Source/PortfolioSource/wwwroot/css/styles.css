@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 163, 135, 21;
+  --bs-primary-rgb: 233, 228, 215;
   --bs-secondary-rgb: 44, 62, 80;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -10872,10 +10872,10 @@ html {
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
-  background-color: #fff;
+  background-color: rgb(var(--bs-secondary-rgb));
 }
 .divider-custom.divider-light .divider-custom-icon {
-  color: #fff;
+  color: rgb(var(--bs-secondary-rgb));
 }
 
 .btn-xl {
@@ -10976,13 +10976,11 @@ html {
 .masthead .masthead-heading {
   font-size: 2.75rem;
   line-height: 2.75rem;
-}
-.masthead .masthead-heading-padded {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
+  color: rgb(var(--bs-secondary-rgb));
 }
 .masthead .masthead-subheading {
   font-size: 1.25rem;
+  color: rgb(var(--bs-secondary-rgb));
 }
 .masthead .masthead-avatar {
   width: 15rem;
