@@ -1,5 +1,26 @@
 [
     {
+        "ModalID": "FF",
+        "ModalSize": "modal-xl",
+        "ImageURL": "assets/img/FF/key_new_03b.jpg",
+        "Title": "Project Freefall",
+        "Icon": "fas fa-parachute-box fa-3x",
+        "Badges": {
+            "Meta Quest": "bg-info",
+            "C++": "bg-success",
+            "Unreal Engine": "bg-success",
+            "Perforce": "",
+            "Jenkins": ""
+        },
+        "Contributions": {
+        "VR Locomotion": "",
+        "Ascend and drop sequence visual show": "",
+        "Networked obstacle spawning & despawning,": ""
+        },
+        "BodyIntro": "<p1>A multiplayer, competitive, skydiving battle game where 2-8 players fight to own the sole parachute before everyone goes SPLAT. Use the obstacles, crazy tools, and your own frantic style to win against PC and VR players.</p1>",
+        "WebsiteURL": "https://schellgames.com/portfolio/freefall"
+    },
+    {
         "ModalID": "SS",
         "ModalSize": "modal-xl",
         "ImageURL": "assets/img/SS/SSLogo.png",
@@ -68,7 +89,7 @@
         },
         "BodyIntro": "<p1>A VR-based rehabilitation experience that is both calming and relaxing. Provides structured tasks and useful tools to help therapists both challenge and motivate their patients to engage more fully in their therapy</p1>",
         "WebsiteURL": "https://schellgames.com/portfolio/pleasant-cove"
-     },
+    },
     {
         "ModalID": "BR",
         "ModalSize": "modal-xl",
@@ -82,13 +103,13 @@
             "Unity": "bg-success",
             "Git": ""
         },
-      "Contributions": {
+        "Contributions": {
         "Character placement and animation tools": "",
         "Parsing game commands from narrative data": "",
         "A* Pathfinding and AI decisionmaking": "",
         "Build optimization and bug fixing": "",
         "Loading and saving serialized player data": ""
-      },
+        },
         "BodyIntro": "<p1>A visual novel style game about a boys's soccer team that is thrown into a whirlwind when their coach introduces Raina, the new female member, and tells them all to get along. With the soccer season on the horizon, it's up to the player to hone their team's skills and relationships, pick sides in arguments, and directly influence how warm their new teammate's welcoming will be.</p1>",
         "WebsiteURL": "https://breakawaygame.champlain.edu/"
     }
