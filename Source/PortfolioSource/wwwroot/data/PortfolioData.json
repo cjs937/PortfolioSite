@@ -14,8 +14,9 @@
         },
         "Contributions": {
         "VR Locomotion": "",
-        "Ascend and drop sequence visual show": "",
-        "Networked obstacle spawning & despawning,": ""
+        "Networked Grab & Climb Interactions": "",
+        "Ascend & Drop Sequence Visuals": "",
+        "Networked Obstacle Spawn & Despawn": ""
         },
         "BodyIntro": "<p1>A multiplayer, competitive, skydiving battle game where 2-8 players fight to own the sole parachute before everyone goes SPLAT. Use the obstacles, crazy tools, and your own frantic style to win against PC and VR players.</p1>",
         "WebsiteURL": "https://schellgames.com/portfolio/freefall"

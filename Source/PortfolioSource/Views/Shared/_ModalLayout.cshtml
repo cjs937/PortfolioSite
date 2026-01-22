@@ -36,10 +36,8 @@
                             <div class="divider-custom-line"></div>
                         </div>  *@
                         <!--Body-->
-                        <div class="modal-body">
+                        <div class="modal-body bordered">
                             @Html.Raw(Model.BodyIntro)
-                            <br/>
-                            <br/>
                         </div>
 
                         <div>
@@ -79,17 +77,17 @@
                         <!-- Contributions List -->
                         @if(Model.Contributions.Count > 0)
                         {
-                            <h3>Contributions</h3>
+                            <h3 class="bordered">Contributions</h3>
                             <ul class="no-bullets">
                             @foreach(var contribution in Model.Contributions)
                             {
                                 <li>
-                                    <h4><strong>@contribution.Key</strong></h4>
+                                    <h4 class="bordered contribution-item"><strong>@contribution.Key</strong></h4>
 
                                     @if(!string.IsNullOrEmpty(contribution.Value))
                                     {
-                                        <br/>
                                         @Html.Raw(contribution.Value);
+                                        <br/>
                                         <br/>
                                     }
 
