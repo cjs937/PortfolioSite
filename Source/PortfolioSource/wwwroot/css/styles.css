@@ -11070,3 +11070,9 @@ ul.no-bullets {
   max-width: 70%;
   border-width: 2px;  
 }
+
+.uniform-grid-img {
+    width: 100%;
+    aspect-ratio: 8 / 4.5;
+    object-fit: cover;
+}

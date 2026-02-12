@@ -96,10 +96,20 @@
                             </ul>
                         }
 
-                        <button class="btn btn-primary" data-bs-dismiss="modal">
-                            <i class="fas fa-xmark fa-fw"></i>
-                            Close Window
-                        </button>
+                        <div class="d-flex justify-content-center gap-2">
+                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Close Window
+                            </button>
+                        
+                            @if (Model.WebsiteURL != null)
+                            {
+                                <a href="@Model.WebsiteURL" target="_blank" class="btn btn-secondary">
+                                    <i class="fas fa-globe fa-fw"></i>
+                                    Visit Website
+                                </a>
+                            }
+                        </div>
                     </div>
                 </div>
             </div>

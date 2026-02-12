@@ -5,18 +5,20 @@
         "ImageURL": "assets/img/FF/key_new_03b.jpg",
         "Title": "Project Freefall",
         "Icon": "fas fa-parachute-box fa-3x",
-        "Badges": {
-            "Meta Quest": "bg-info",
-            "C++": "bg-success",
-            "Unreal Engine": "bg-success",
-            "Perforce": "",
-            "Jenkins": ""
-        },
-        "Contributions": {
+      "Badges": {
+        "Game Engineer": "bg-info",
+        "Meta Quest": "bg-info",
+        "C++": "bg-success",
+        "Unreal Engine": "bg-success",
+        "Perforce": "",
+        "Jenkins": "",
+        "2025": "bg-secondary"
+      },
+      "Contributions": {
         "VR Locomotion": "",
         "Networked Grab & Climb Interactions": "",
         "Ascend & Drop Sequence": ""
-        },
+      },
         "BodyIntro": "<p1>A multiplayer, competitive, skydiving battle game where 2-8 players fight to own the sole parachute before everyone goes SPLAT. Use the obstacles, crazy tools, and your own frantic style to win against PC and VR players.</p1>",
         "WebsiteURL": "https://schellgames.com/portfolio/freefall"
     },
@@ -25,24 +27,26 @@
         "ModalSize": "modal-xl",
         "ImageURL": "assets/img/SS/SSLogo.png",
         "Title": "Silent Slayer",
-        "Badges": {
-            "Meta Quest": "bg-info",
-            "Valve Index": "bg-info",
-            "C++": "bg-success",
-            "Unreal Engine": "bg-success",
-            "Perforce": "",
-            "Jenkins": ""
-        },
+      "Badges": {
+        "Game Engineer": "bg-info",
+        "Meta Quest": "bg-info",
+        "Valve Index": "bg-info",
+        "C++": "bg-success",
+        "Unreal Engine": "bg-success",
+        "Perforce": "",
+        "Jenkins": "",
+        "2024": "bg-secondary"
+      },
         "Icon": "fas fa-dungeon fa-3x",
-        "Contributions": {
-            "Cutscene Sequencing & Authoring Tools": "",
-            "Noise & Alert System": "",
-            "Vampire Finite State Machine": "",
-            "FTUE Tutorial Routing": "",
-            "Gameplay Analytics Integration": "",
-            "Tension Director System": "",
-            "Feedback Systems (Haptics & Audio)": ""
-        },
+      "Contributions": {
+        "Cutscene Sequencing & Authoring Tools": "",
+        "Noise & Alert System": "",
+        "Vampire Finite State Machine": "",
+        "FTUE Tutorial Routing": "",
+        "Gameplay Analytics Integration": "",
+        "Tension Director System": "",
+        "Feedback Systems (Haptics & Audio)": ""
+      },
         "BodyIntro": "<p1>Horror/Puzzle game where you, The Slayer, must break into the coffins of a fiendish vampire clan, and quietly disarm their traps without waking them. Be silent, and be precise, and you will overpower these slumbering beasts.</p1>",
         "WebsiteURL": "https://schellgames.com/portfolio/silent-slayer"
     },
@@ -52,13 +56,15 @@
         "ImageURL": "assets/img/LR/Logo.jpg",
         "Title": "Lost Recipes",
         "Icon": "fas fa-drumstick-bite fa-3x",
-        "Badges": {
-            "Meta Quest": "bg-info",
-            "C++": "bg-success",
-            "Unreal Engine": "bg-success",
-            "Perforce": "",
-            "Jenkins": ""
-        },
+      "Badges": {
+        "Game Engineer": "bg-info",
+        "Meta Quest": "bg-info",
+        "C++": "bg-success",
+        "Unreal Engine": "bg-success",
+        "Perforce": "",
+        "Jenkins": "",
+        "2022": "bg-secondary"
+      },
       "Contributions": {
         "Physics Based Interactions (Stirring, Cutting, Socketing)": "",
         "Baking & Steaming Systems": "",
@@ -74,15 +80,17 @@
         "ImageURL": "assets/img/PC/Bird.png",
         "Title": "Pleasant Cove",
         "Icon": "fas fa-dove fa-3x",
-        "Badges": {
-            "Meta Quest": "bg-info",
-            "C++": "bg-success",
-            "Unreal Engine": "bg-success",
-            "Perforce": "",
-            "Jenkins": ""
-        },
+      "Badges": {
+        "Game Engineer": "bg-info",
+        "Meta Quest": "bg-info",
+        "C++": "bg-success",
+        "Unreal Engine": "bg-success",
+        "Perforce": "",
+        "Jenkins": "",
+        "2022": "bg-secondary"
+      },
         "Contributions": {
-            "Bird character AI & Animation States": "",
+            "Bird Character AI & Animation States": "",
             "Xylophone & Music Box Activity": "",
             "Music Box Song Authoring Tools": "",
             "Flash Card Activity & Authoring Tools": ""
@@ -91,26 +99,96 @@
         "WebsiteURL": "https://schellgames.com/portfolio/pleasant-cove"
     },
     {
-        "ModalID": "BR",
-        "ModalSize": "modal-xl",
-        "ImageURL": "assets/img/BR/Logo.png",
-        "Title": "Breakaway",
-        "Icon": "fas fa-soccer-ball fa-3x",
-        "Badges": {
-            "IOS": "bg-info",
-            "Android": "bg-info",
-            "C#": "bg-success",
-            "Unity": "bg-success",
-            "Git": ""
-        },
-        "Contributions": {
-        "Character Model Placement & Gesturing Tools": "",
-        "Parsing Gameplay Commands from Narrative Files": "",
-        "A* Pathfinding and AI Decisionmaking": "",
+      "ModalID": "BR",
+      "ModalSize": "modal-xl",
+      "ImageURL": "assets/img/BR/Logo.png",
+      "Title": "Breakaway",
+      "Icon": "fas fa-soccer-ball fa-3x",
+      "Badges": {
+        "Game Programmer": "bg-info",
+        "IOS": "bg-info",
+        "Android": "bg-info",
+        "C#": "bg-success",
+        "Unity": "bg-success",
+        "Git": "",
+        "2017": "bg-secondary"
+      },
+      "Contributions": {
+        "Mid-Scene Character Placement": "",
+        "Parsing Commands from Narrative Files": "",
+        "A* Pathfinding": "",
+        "AI Decisionmaking": "",
         "Build Optimization & Bug Fixing": "",
         "Loading & Saving Serialized Player Data": ""
-        },
-        "BodyIntro": "<p1>A visual novel style game about a boys's soccer team that is thrown into a whirlwind when their coach introduces Raina, the new female member, and tells them all to get along. With the soccer season on the horizon, it's up to the player to hone their team's skills and relationships, pick sides in arguments, and directly influence how warm their new teammate's welcoming will be.</p1>",
-        "WebsiteURL": "https://breakawaygame.champlain.edu/"
-    }
+      },
+      "BodyIntro": "<p1>A visual novel style game about a boys's soccer team that is thrown into a whirlwind when their coach introduces Raina, the new female member, and tells them all to get along. With the soccer season on the horizon, it's up to the player to hone their team's skills and relationships, pick sides in arguments, and directly influence how warm their new teammate's welcoming will be.</p1>",
+      "WebsiteURL": "https://breakawaygame.champlain.edu/"
+    },
+  {
+    "ModalID": "ARACH",
+    "ModalSize": "modal-xl",
+    "ImageURL": "assets/img/ARACH/Capture1.png",
+    "Title": "Arachnotron",
+    "Icon": "fas fa-spider fa-3x",
+    "Badges": {
+      "Gameplay Programmer": "bg-info",
+      "Student Project": "bg-info",
+      "C#": "bg-success",
+      "Unity": "bg-success",
+      "Git": "",
+      "2019": "bg-secondary"
+    },
+    "Contributions": {
+      "Scripted Sequence System": "",
+      "Modular Weapon Building Tools": "",
+      "Player Weapons System & Movement Abilities": "",
+      "Bug Fixes & Build Testing": "",
+      "Shader Implementation": ""
+    },
+    "BodyIntro": "<p1>A third person action shooter where the player can traverse every surface of the environment to their advantage. As a mechanical spider-tank hellbent on revenge, use the different weapons at your disposal to take down the criminal organization S.W.A.R.M.</p1>",
+    "WebsiteURL": "https://wrong-warp-games.itch.io/arachnotron"
+  },
+  {
+    "ModalID": "SSS",
+    "ModalSize": "modal-xl",
+    "ImageURL": "assets/img/SSS/SSSLogo2.png",
+    "Title": "Super Sibling SMASHERINO",
+    "Icon": "fas fa-bowling-ball fa-3x",
+    "Badges": {
+      "Gameplay Programmer": "bg-info",
+      "Game Jam": "bg-info",
+      "C#": "bg-success",
+      "Unity": "bg-success",
+      "Git": "",
+      "2019": "bg-secondary"
+    },
+    "Contributions": {
+      "Character Movement": "",
+      "Throwable Objects": "",
+      "Art Implementation": "",
+      "Secret Code": ""
+    },
+    "BodyIntro": "<p1>A one-on-one platform-fighter wherein you and a friend control two brothers hell-bent on beating the piss out of each other with various toys and objects. For extra, familial effect, playing the game involves sharing a keyboard. Global Game Jam 2019 Submission</p1>",
+    "WebsiteURL": "https://gabeeddyt.itch.io/super-sibling-smasherino"
+  },
+  {
+    "ModalID": "BOX",
+    "ModalSize": "modal-xl",
+    "ImageURL": "assets/img/BOX/fYtVRf.png",
+    "Title": "The Box Ghost",
+    "Icon": "fas fas fa-square fa-3x",
+    "Badges": {
+      "Game Programmer": "bg-info",
+      "Game Jam": "bg-info",
+      "C#": "bg-success",
+      "Unity": "bg-success",
+      "Git": "",
+      "2017": "bg-secondary"
+    },
+    "Contributions": {
+      "Interactables": ""
+    },
+    "BodyIntro": "<p1>GDL Quantum Jam submission. Manipulate your Physical and Astral box body to solve puzzles and go through levels.</p1>",
+    "WebsiteURL": "https://nickmagnusdev.itch.io/the-box-ghost"
+  }
 ]

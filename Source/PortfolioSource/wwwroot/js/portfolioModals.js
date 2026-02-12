@@ -24,7 +24,7 @@ async function LoadPortfolioGrid() {
         icon.className = item.Icon;
 
         const img = document.createElement("img");
-        img.className = "img-fluid";
+        img.className = "img-fluid uniform-grid-img";
         img.src = item.ImageURL || "";
         img.alt = item.Title || "...";
 
