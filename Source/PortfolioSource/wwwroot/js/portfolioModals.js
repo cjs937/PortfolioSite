@@ -44,6 +44,13 @@ async function LoadPortfolioGrid() {
             OpenModal(item.ModalID);
         });
     });
+
+    const modalShell = document.getElementById("modalShell");
+    modalShell.addEventListener("hidden.bs.modal", function()
+    {
+        iframe = modalShell.querySelector('iframe');
+        iframe.src = "";
+    });
 }
 
 async function OpenModal(ModalID)
@@ -52,8 +59,10 @@ async function OpenModal(ModalID)
     const response = await fetch(`/Home/OpenModal/${ModalID}`);
     const partialViewText = await response.text();
 
-    document.getElementById("modalShell").innerHTML = partialViewText;
-    const modal = new bootstrap.Modal(document.getElementById("modalShell"));
+    modalShell = document.getElementById("modalShell");
+    modalShell.innerHTML = partialViewText;
+        
+    const modal = new bootstrap.Modal(modalShell);
     modal.show();
 }
 

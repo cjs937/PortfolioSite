@@ -8,6 +8,7 @@ namespace PortfolioSource.Models
         public string Title { get; set; } = "EmptyTitle";
         public string ImageURL { get; set; } = "";
         public string WebsiteURL { get; set; } = "";
+        public string GameplayVideoURL { get; set; } = "";
         public Dictionary<string, string> Badges { get; set; } = new Dictionary<string, string>(); //Title, Color
         public string BodyIntro { get; set; } = "";
         public string BodyMain { get; set; } = "";

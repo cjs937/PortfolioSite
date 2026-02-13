@@ -10,13 +10,24 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
-                        <!-- Portfolio Modal - Title-->
+                        <!-- Portfolio Modal Title-->
                         <h1 class="portfolio-modal-title text-secondary text-uppercase mb-0">
                             <a class="title-link" href="@Model.WebsiteURL" target="_blank">@Model.Title</a>
                         </h1>
                         <br/>
-                        <!--Image-->
-                        <img class="img-fluid rounded mb-5" src="@Model.ImageURL" alt="..." />
+
+                        @if(Model.GameplayVideoURL != "")
+                        {
+                            <!--Gameplay Video-->
+                            <div class="ratio ratio-16x9 mb-4">
+                                <iframe src=@(Model.GameplayVideoURL + "?rel=0") title="Gameplay Video" allowfullscreen></iframe>
+                            </div>
+                        }
+                        else
+                        {
+                            <!--Image-->
+                            <img class="img-fluid rounded mb-5" src="@Model.ImageURL" alt="..." />
+                        }
                         <br/>
                         <!-- Badges -->
                         <div>
@@ -35,6 +46,7 @@
                             <!-- <div class="divider-custom-icon"><i class="fas fa-star"></i></div> -->
                             <div class="divider-custom-line"></div>
                         </div>  *@
+
                         <!--Body-->
                         <div class="modal-body bordered">
                             @Html.Raw(Model.BodyIntro)
@@ -102,7 +114,7 @@
                                 Close Window
                             </button>
                         
-                            @if (Model.WebsiteURL != null)
+                            @if (Model.WebsiteURL != "")
                             {
                                 <a href="@Model.WebsiteURL" target="_blank" class="btn btn-secondary">
                                     <i class="fas fa-globe fa-fw"></i>

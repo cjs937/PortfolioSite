@@ -1,129 +1,133 @@
 [
-    {
-        "ModalID": "FF",
-        "ModalSize": "modal-xl",
-        "ImageURL": "assets/img/FF/key_new_03b.jpg",
-        "Title": "Project Freefall",
-        "Icon": "fas fa-parachute-box fa-3x",
-      "Badges": {
-        "Game Engineer": "bg-info",
-        "Meta Quest": "bg-info",
-        "C++": "bg-success",
-        "Unreal Engine": "bg-success",
-        "Perforce": "",
-        "Jenkins": "",
-        "2025": "bg-secondary"
-      },
-      "Contributions": {
-        "VR Locomotion": "",
-        "Networked Grab & Climb Interactions": "",
-        "Ascend & Drop Sequence": ""
-      },
-        "BodyIntro": "<p1>A multiplayer, competitive, skydiving battle game where 2-8 players fight to own the sole parachute before everyone goes SPLAT. Use the obstacles, crazy tools, and your own frantic style to win against PC and VR players.</p1>",
-        "WebsiteURL": "https://schellgames.com/portfolio/freefall"
+  {
+    "ModalID": "FF",
+    "ModalSize": "modal-xl",
+    "ImageURL": "assets/img/FF/key_new_03b.jpg",
+    "Title": "Project Freefall",
+    "Icon": "fas fa-parachute-box fa-3x",
+    "Badges": {
+      "Game Engineer": "bg-info",
+      "Meta Quest": "bg-info",
+      "C++": "bg-success",
+      "Unreal Engine": "bg-success",
+      "Perforce": "",
+      "Jenkins": "",
+      "2025": "bg-secondary"
     },
-    {
-        "ModalID": "SS",
-        "ModalSize": "modal-xl",
-        "ImageURL": "assets/img/SS/SSLogo.png",
-        "Title": "Silent Slayer",
-      "Badges": {
-        "Game Engineer": "bg-info",
-        "Meta Quest": "bg-info",
-        "Valve Index": "bg-info",
-        "C++": "bg-success",
-        "Unreal Engine": "bg-success",
-        "Perforce": "",
-        "Jenkins": "",
-        "2024": "bg-secondary"
-      },
-        "Icon": "fas fa-dungeon fa-3x",
-      "Contributions": {
-        "Cutscene Sequencing & Authoring Tools": "",
-        "Noise & Alert System": "",
-        "Vampire Finite State Machine": "",
-        "FTUE Tutorial Routing": "",
-        "Gameplay Analytics Integration": "",
-        "Tension Director System": "",
-        "Feedback Systems (Haptics & Audio)": ""
-      },
-        "BodyIntro": "<p1>Horror/Puzzle game where you, The Slayer, must break into the coffins of a fiendish vampire clan, and quietly disarm their traps without waking them. Be silent, and be precise, and you will overpower these slumbering beasts.</p1>",
-        "WebsiteURL": "https://schellgames.com/portfolio/silent-slayer"
+    "Contributions": {
+      "VR Locomotion": "",
+      "Networked Grab & Climb Interactions": "",
+      "Ascend & Drop Sequence": ""
     },
-    {
-        "ModalID": "LR",
-        "ModalSize": "modal-xl",
-        "ImageURL": "assets/img/LR/Logo.jpg",
-        "Title": "Lost Recipes",
-        "Icon": "fas fa-drumstick-bite fa-3x",
-      "Badges": {
-        "Game Engineer": "bg-info",
-        "Meta Quest": "bg-info",
-        "C++": "bg-success",
-        "Unreal Engine": "bg-success",
-        "Perforce": "",
-        "Jenkins": "",
-        "2022": "bg-secondary"
-      },
-      "Contributions": {
-        "Physics Based Interactions (Stirring, Cutting, Socketing)": "",
-        "Baking & Steaming Systems": "",
-        "Tech Support for Recipe Sequences": "",
-        "Bug Fixes & Optimization": ""
-      },
-        "BodyIntro": "<p1>Prepare authentic food in three historic kitchens in this relaxing cooking simulator. Travel throughout history to master traditional recipes and discover classic ingredients, tools, and techniques. Indulge your appetite for a unique chef training experience in this realistic and satisfying game.</p1>",
-        "WebsiteURL": "https://schellgames.com/portfolio/lost-recipes"
+    "BodyIntro": "<p1>A multiplayer, competitive, skydiving battle game where 2-8 players fight to own the sole parachute before everyone goes SPLAT. Use the obstacles, crazy tools, and your own frantic style to win against PC and VR players.</p1>",
+    "WebsiteURL": "https://schellgames.com/portfolio/freefall",
+    "GameplayVideoURL": "https://www.youtube.com/embed/AMKpCzGLniY?si=fUxw3fXHfHCjybj0"
+  },
+  {
+    "ModalID": "SS",
+    "ModalSize": "modal-xl",
+    "ImageURL": "assets/img/SS/SSLogo.png",
+    "Title": "Silent Slayer",
+    "Badges": {
+      "Game Engineer": "bg-info",
+      "Meta Quest": "bg-info",
+      "Valve Index": "bg-info",
+      "C++": "bg-success",
+      "Unreal Engine": "bg-success",
+      "Perforce": "",
+      "Jenkins": "",
+      "2024": "bg-secondary"
     },
-    {
-        "ModalID": "PC",
-        "ModalSize": "modal-xl",
-        "ImageURL": "assets/img/PC/Bird.png",
-        "Title": "Pleasant Cove",
-        "Icon": "fas fa-dove fa-3x",
-      "Badges": {
-        "Game Engineer": "bg-info",
-        "Meta Quest": "bg-info",
-        "C++": "bg-success",
-        "Unreal Engine": "bg-success",
-        "Perforce": "",
-        "Jenkins": "",
-        "2022": "bg-secondary"
-      },
-        "Contributions": {
-            "Bird Character AI & Animation States": "",
-            "Xylophone & Music Box Activity": "",
-            "Music Box Song Authoring Tools": "",
-            "Flash Card Activity & Authoring Tools": ""
-        },
-        "BodyIntro": "<p1>A VR-based rehabilitation experience that is both calming and relaxing. Provides structured tasks and useful tools to help therapists both challenge and motivate their patients to engage more fully in their therapy</p1>",
-        "WebsiteURL": "https://schellgames.com/portfolio/pleasant-cove"
+    "Icon": "fas fa-dungeon fa-3x",
+    "Contributions": {
+      "Cutscene Sequencing & Authoring Tools": "",
+      "Noise & Alert System": "",
+      "Vampire Finite State Machine": "",
+      "FTUE Tutorial Routing": "",
+      "Gameplay Analytics Integration": "",
+      "Tension Director System": "",
+      "Feedback Systems (Haptics & Audio)": ""
     },
-    {
-      "ModalID": "BR",
-      "ModalSize": "modal-xl",
-      "ImageURL": "assets/img/BR/Logo.png",
-      "Title": "Breakaway",
-      "Icon": "fas fa-soccer-ball fa-3x",
-      "Badges": {
-        "Game Programmer": "bg-info",
-        "IOS": "bg-info",
-        "Android": "bg-info",
-        "C#": "bg-success",
-        "Unity": "bg-success",
-        "Git": "",
-        "2017": "bg-secondary"
-      },
-      "Contributions": {
-        "Mid-Scene Character Placement": "",
-        "Parsing Commands from Narrative Files": "",
-        "A* Pathfinding": "",
-        "AI Decisionmaking": "",
-        "Build Optimization & Bug Fixing": "",
-        "Loading & Saving Serialized Player Data": ""
-      },
-      "BodyIntro": "<p1>A visual novel style game about a boys's soccer team that is thrown into a whirlwind when their coach introduces Raina, the new female member, and tells them all to get along. With the soccer season on the horizon, it's up to the player to hone their team's skills and relationships, pick sides in arguments, and directly influence how warm their new teammate's welcoming will be.</p1>",
-      "WebsiteURL": "https://breakawaygame.champlain.edu/"
+    "BodyIntro": "<p1>Horror/Puzzle game where you, The Slayer, must break into the coffins of a fiendish vampire clan, and quietly disarm their traps without waking them. Be silent, and be precise, and you will overpower these slumbering beasts.</p1>",
+    "WebsiteURL": "https://schellgames.com/portfolio/silent-slayer",
+    "GameplayVideoURL": "https://www.youtube.com/embed/imQyjBD62vc?si=Ds_opXKkTRHeEAOJ"
+  },
+  {
+    "ModalID": "LR",
+    "ModalSize": "modal-xl",
+    "ImageURL": "assets/img/LR/Logo.jpg",
+    "Title": "Lost Recipes",
+    "Icon": "fas fa-drumstick-bite fa-3x",
+    "Badges": {
+      "Game Engineer": "bg-info",
+      "Meta Quest": "bg-info",
+      "C++": "bg-success",
+      "Unreal Engine": "bg-success",
+      "Perforce": "",
+      "Jenkins": "",
+      "2022": "bg-secondary"
     },
+    "Contributions": {
+      "Physics Based Interactions (Stirring, Cutting, Socketing)": "",
+      "Baking & Steaming Systems": "",
+      "Tech Support for Recipe Sequences": "",
+      "Bug Fixes & Optimization": ""
+    },
+    "BodyIntro": "<p1>Prepare authentic food in three historic kitchens in this relaxing cooking simulator. Travel throughout history to master traditional recipes and discover classic ingredients, tools, and techniques. Indulge your appetite for a unique chef training experience in this realistic and satisfying game.</p1>",
+    "WebsiteURL": "https://schellgames.com/portfolio/lost-recipes",
+    "GameplayVideoURL": "https://www.youtube.com/embed/y8qisSiEmPY?si=pFmWTUmN3srUt9Dr"
+  },
+  {
+    "ModalID": "PC",
+    "ModalSize": "modal-xl",
+    "ImageURL": "assets/img/PC/Bird.png",
+    "Title": "Pleasant Cove",
+    "Icon": "fas fa-dove fa-3x",
+    "Badges": {
+      "Game Engineer": "bg-info",
+      "Meta Quest": "bg-info",
+      "C++": "bg-success",
+      "Unreal Engine": "bg-success",
+      "Perforce": "",
+      "Jenkins": "",
+      "2022": "bg-secondary"
+    },
+    "Contributions": {
+      "Bird Character AI & Animation States": "",
+      "Xylophone & Music Box Activity": "",
+      "Music Box Song Authoring Tools": "",
+      "Flash Card Activity & Authoring Tools": ""
+    },
+    "BodyIntro": "<p1>A VR-based rehabilitation experience that is both calming and relaxing. Provides structured tasks and useful tools to help therapists both challenge and motivate their patients to engage more fully in their therapy</p1>",
+    "WebsiteURL": "https://schellgames.com/portfolio/pleasant-cove"
+  },
+  {
+    "ModalID": "BR",
+    "ModalSize": "modal-xl",
+    "ImageURL": "assets/img/BR/Logo.png",
+    "Title": "Breakaway",
+    "Icon": "fas fa-soccer-ball fa-3x",
+    "Badges": {
+      "Game Programmer": "bg-info",
+      "IOS": "bg-info",
+      "Android": "bg-info",
+      "C#": "bg-success",
+      "Unity": "bg-success",
+      "Git": "",
+      "2017": "bg-secondary"
+    },
+    "Contributions": {
+      "Mid-Scene Character Placement": "",
+      "Parsing Commands from Narrative Files": "",
+      "A* Pathfinding": "",
+      "AI Decisionmaking": "",
+      "Build Optimization & Bug Fixing": "",
+      "Loading & Saving Serialized Player Data": ""
+    },
+    "BodyIntro": "<p1>A visual novel style game about a boys's soccer team that is thrown into a whirlwind when their coach introduces Raina, the new female member, and tells them all to get along. With the soccer season on the horizon, it's up to the player to hone their team's skills and relationships, pick sides in arguments, and directly influence how warm their new teammate's welcoming will be.</p1>",
+    "WebsiteURL": "https://breakawaygame.champlain.edu/",
+    "GameplayVideoURL": "https://www.youtube.com/embed/iVpmu9ssJA4?si=94lzUAMsXVa-4jD0"
+  },
   {
     "ModalID": "ARACH",
     "ModalSize": "modal-xl",
@@ -146,7 +150,8 @@
       "Shader Implementation": ""
     },
     "BodyIntro": "<p1>A third person action shooter where the player can traverse every surface of the environment to their advantage. As a mechanical spider-tank hellbent on revenge, use the different weapons at your disposal to take down the criminal organization S.W.A.R.M.</p1>",
-    "WebsiteURL": "https://wrong-warp-games.itch.io/arachnotron"
+    "WebsiteURL": "https://wrong-warp-games.itch.io/arachnotron",
+    "GameplayVideoURL": "https://www.youtube.com/embed/9ssWFu5WxMA?si=mvZ3HuDa7skTDFbI"
   },
   {
     "ModalID": "SSS",
