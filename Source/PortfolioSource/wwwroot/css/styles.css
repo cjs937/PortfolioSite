@@ -11076,3 +11076,13 @@ ul.no-bullets {
     aspect-ratio: 8 / 4.5;
     object-fit: cover;
 }
+
+.navbar-nav .nav-item {
+    border-left: 1px solid #fff;
+    padding-left: 0.75rem;
+}
+
+.navbar-nav .nav-item:last-child {
+    padding-right: 0.75rem;
+    border-right: 1px solid #fff;
+}
