@@ -4,7 +4,7 @@ namespace PortfolioSource.Services
 {
     public interface IPortfolioService
     {
-        PortfolioItemViewModel GetItemByID(string ItemID = "");
+        PortfolioItemViewModel GetItemByID(string ItemID = "", string DataFileName ="");
     }
 
     public class PortfolioService : IPortfolioService
@@ -16,10 +16,10 @@ namespace PortfolioSource.Services
             Env = env;
         }
 
-        public PortfolioItemViewModel GetItemByID(string ItemID)
+        public PortfolioItemViewModel GetItemByID(string ItemID, string DataFileName)
         {
             Console.WriteLine("Getting Item By ID: " + ItemID);
-            var ItemList = GetPortfolioItems();
+            var ItemList = GetPortfolioItems(DataFileName);
 
             foreach (var item in ItemList)
             {
@@ -43,9 +43,9 @@ namespace PortfolioSource.Services
         }
 
 
-        private List<PortfolioItemViewModel> GetPortfolioItems()
+        private List<PortfolioItemViewModel> GetPortfolioItems(string DataFileName)
         {
-            var JsonPath = Path.Combine(Env.WebRootPath, "data", "PortfolioData.json");
+            var JsonPath = Path.Combine(Env.WebRootPath, "data", DataFileName);
 
             if (!File.Exists(JsonPath))
             {

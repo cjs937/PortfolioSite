@@ -1,0 +1,97 @@
+[
+    {
+        "ModalID": "TT",
+        "ModalSize": "modal-xl",
+        "ImageURL": "assets/img/TT/Carousel/loginpage.PNG",
+        "Title": "Task Tracker",
+        "Icon": "fas fa-clipboard-list fa-3x",
+        "Badges": {
+        "Sole Programmer": "bg-info",
+        "React": "bg-success",
+        "Typescript": "bg-success",
+        "Javascript": "bg-success",
+        "Node.js": "bg-success",
+        "Express.js": "bg-success",
+        "SQLite": "bg-success",
+        "Git": "",
+        "2026": "bg-secondary"
+        },
+        "Contributions": {
+        "Web Client": "",
+        "Server Architecture": "",
+        "API Routes": "",
+        "SQLite CRUD": "",
+        "JWT Authentication" : ""
+        },
+        "BodyIntro": "<p1>A full-stack task management app with projects, task lists, and tasks, Built to gain experience with React & Typescript, and explore client-server networking architecture.</p1>",
+        "WebsiteURL": "https://github.com/cjs937/TaskTracker"
+    },
+    {
+        "ModalID": "ARACH",
+        "ModalSize": "modal-xl",
+        "ImageURL": "assets/img/ARACH/Capture1.png",
+        "Title": "Arachnotron",
+        "Icon": "fas fa-spider fa-3x",
+        "Badges": {
+        "Gameplay Programmer": "bg-info",
+        "Student Project": "bg-info",
+        "C#": "bg-success",
+        "Unity": "bg-success",
+        "Git": "",
+        "2019": "bg-secondary"
+        },
+        "Contributions": {
+        "Scripted Sequence System": "",
+        "Modular Weapon Building Tools": "",
+        "Player Weapons System & Movement Abilities": "",
+        "Bug Fixes & Build Testing": "",
+        "Shader Implementation": ""
+        },
+        "BodyIntro": "<p1>A third person action shooter where the player can traverse every surface of the environment to their advantage. As a mechanical spider-tank hellbent on revenge, use the different weapons at your disposal to take down the criminal organization S.W.A.R.M.</p1>",
+        "WebsiteURL": "https://wrong-warp-games.itch.io/arachnotron",
+        "GameplayVideoURL": "https://www.youtube.com/embed/9ssWFu5WxMA?si=mvZ3HuDa7skTDFbI"
+    },
+    {
+        "ModalID": "SSS",
+        "ModalSize": "modal-xl",
+        "ImageURL": "assets/img/SSS/SSSLogo2.png",
+        "Title": "Super Sibling SMASHERINO",
+        "Icon": "fas fa-bowling-ball fa-3x",
+        "Badges": {
+        "Gameplay Programmer": "bg-info",
+        "Game Jam": "bg-info",
+        "C#": "bg-success",
+        "Unity": "bg-success",
+        "Git": "",
+        "2019": "bg-secondary"
+        },
+        "Contributions": {
+        "Character Movement": "",
+        "Throwable Objects": "",
+        "Art Implementation": "",
+        "Secret Code": ""
+        },
+        "BodyIntro": "<p1>A one-on-one platform-fighter wherein you and a friend control two brothers hell-bent on beating the piss out of each other with various toys and objects. For extra, familial effect, playing the game involves sharing a keyboard. Global Game Jam 2019 Submission</p1>",
+        "WebsiteURL": "https://gabeeddyt.itch.io/super-sibling-smasherino"
+    },
+    {
+        "ModalID": "BOX",
+        "ModalSize": "modal-xl",
+        "ImageURL": "assets/img/BOX/fYtVRf.png",
+        "Title": "The Box Ghost",
+        "Icon": "fas fas fa-square fa-3x",
+        "Badges": {
+        "Game Programmer": "bg-info",
+        "Game Jam": "bg-info",
+        "C#": "bg-success",
+        "Unity": "bg-success",
+        "Git": "",
+        "2017": "bg-secondary"
+        },
+        "Contributions": {
+        "Interactables": ""
+        },
+        "BodyIntro": "<p1>GDL Quantum Jam submission. Manipulate your Physical and Astral box body to solve puzzles and go through levels.</p1>",
+        "WebsiteURL": "https://nickmagnusdev.itch.io/the-box-ghost"
+    }
+]

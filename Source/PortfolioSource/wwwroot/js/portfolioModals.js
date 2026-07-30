@@ -41,7 +41,7 @@ async function LoadPortfolioGrid() {
         {
             console.log(item.ModalID + " clicked");
 
-            OpenModal(item.ModalID);
+            OpenModal(item.ModalID, "PortfolioData.json");
         });
     });
 
@@ -53,10 +53,65 @@ async function LoadPortfolioGrid() {
     });
 }
 
-async function OpenModal(ModalID)
+async function LoadSideProjGrid() {
+    const result = await fetch("/data/SideProjData.json");
+    const jsonItems = await result.json();
+
+    const divGrid = document.getElementById("sideProjGrid");
+
+    jsonItems.forEach(item => {
+        const divCol = document.createElement("div");
+        divCol.className = "col-md-6 col-lg-4 mb-5";
+
+        const divPortfolioItem = document.createElement("div");
+        divPortfolioItem.className = "portfolio-item mx-auto";
+        divPortfolioItem.setAttribute("data-bs-toggle", "#modal");
+        divPortfolioItem.setAttribute("data-bs-target", "#" + item.ModalID);
+        divPortfolioItem.setAttribute("id", item.ModalID);
+
+        const divCaption = document.createElement("div");
+        divCaption.className = "portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100";
+
+        const divCaptionContent = document.createElement("div");
+        divCaptionContent.className = "portfolio-item-caption-content text-center text-white";
+
+        const icon = document.createElement("i");
+        icon.className = item.Icon;
+
+        const img = document.createElement("img");
+        img.className = "img-fluid uniform-grid-img";
+        img.src = item.ImageURL || "";
+        img.alt = item.Title || "...";
+
+        divCaptionContent.appendChild(icon);
+        divCaption.appendChild(divCaptionContent);
+        divPortfolioItem.appendChild(divCaption);
+        divPortfolioItem.appendChild(img);
+        divCol.appendChild(divPortfolioItem);
+        divGrid.appendChild(divCol);
+
+        console.log("Registering Modal: " + item.ModalID);
+
+        divPortfolioItem.addEventListener("click", function()
+        {
+            console.log(item.ModalID + " clicked");
+
+            OpenModal(item.ModalID, "SideProjData.json");
+        });
+    });
+
+    const modalShell = document.getElementById("modalShell");
+    modalShell.addEventListener("hidden.bs.modal", function()
+    {
+        iframe = modalShell.querySelector('iframe');
+        iframe.src = "";
+    });
+}
+
+async function OpenModal(ModalID, SourceFileName)
 {
     console.log("Opening Modal: " + ModalID);
-    const response = await fetch(`/Home/OpenModal/${ModalID}`);
+    const response = await fetch(`/Home/OpenModal/${ModalID}/${SourceFileName}`);
     const partialViewText = await response.text();
 
     modalShell = document.getElementById("modalShell");
@@ -67,3 +122,4 @@ async function OpenModal(ModalID)
 }
 
 document.addEventListener("DOMContentLoaded", LoadPortfolioGrid);
+document.addEventListener("DOMContentLoaded", LoadSideProjGrid);

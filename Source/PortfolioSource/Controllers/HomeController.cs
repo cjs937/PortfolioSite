@@ -22,11 +22,12 @@ namespace PortfolioSource.Controllers
             return View();
         }
 
-        public IActionResult OpenModal(string id)
+        [HttpGet("Home/OpenModal/{id}/{DataFileName}")]
+        public IActionResult OpenModal(string id, string DataFileName)
         {
             Console.WriteLine("Attempting to open modal: " + id);
 
-            var ModalData = PortfolioService.GetItemByID(id);
+            var ModalData = PortfolioService.GetItemByID(id, DataFileName);
 
             if (ModalData.ModalID == "")
             {
