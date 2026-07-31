@@ -2,7 +2,7 @@
     {
         "ModalID": "TT",
         "ModalSize": "modal-xl",
-        "ImageURL": "assets/img/TT/Carousel/loginpage.PNG",
+        "ImageURL": "assets/img/TT/loginpage.PNG",
         "Title": "Task Tracker",
         "Icon": "fas fa-clipboard-list fa-3x",
         "Badges": {
@@ -23,7 +23,7 @@
         "SQLite CRUD": "",
         "JWT Authentication" : ""
         },
-        "BodyIntro": "<p1>A full-stack task management app with projects, task lists, and tasks, Built to gain experience with React & Typescript, and explore client-server networking architecture.</p1>",
+        "BodyIntro": "<p1>A full-stack task management app with projects, task lists, and tasks. Built to gain experience with React & Typescript, and explore client-server networking architecture.</p1>",
         "WebsiteURL": "https://github.com/cjs937/TaskTracker"
     },
     {
