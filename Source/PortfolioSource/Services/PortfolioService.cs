@@ -4,7 +4,8 @@ namespace PortfolioSource.Services
 {
     public interface IPortfolioService
     {
-        PortfolioItemViewModel GetItemByID(string ItemID = "", string DataFileName ="");
+        string GetViewNameByID(string ItemID = "", string DataFileName = "");
+        PortfolioItemViewModel GetItemByID(string ItemID = "", string DataFileName = "");
     }
 
     public class PortfolioService : IPortfolioService
@@ -14,6 +15,34 @@ namespace PortfolioSource.Services
         public PortfolioService(IWebHostEnvironment env)
         {
             Env = env;
+        }
+
+        public string GetViewNameByID(string ItemID, string DataFileName)
+        {
+            Console.WriteLine("Getting View Name for ID: " + ItemID);
+            
+            // Map modal IDs to their specific partial view names
+            var viewMapping = new Dictionary<string, string>
+            {
+                { "FF", "_ModalFF" },
+                { "SS", "_ModalSS" },
+                { "LR", "_ModalLR" },
+                { "PC", "_ModalPC" },
+                { "BR", "_ModalBR" },
+                { "TT", "_ModalTT" },
+                { "ARACH", "_ModalARACH" },
+                { "SSS", "_ModalSSS" },
+                { "BOX", "_ModalBOX" }
+            };
+
+            if (viewMapping.ContainsKey(ItemID))
+            {
+                Console.WriteLine("Found view name: " + viewMapping[ItemID]);
+                return viewMapping[ItemID];
+            }
+
+            Console.WriteLine("View name not found for: " + ItemID);
+            return "_ModalLayout";
         }
 
         public PortfolioItemViewModel GetItemByID(string ItemID, string DataFileName)

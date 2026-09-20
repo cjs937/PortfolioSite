@@ -27,6 +27,7 @@ namespace PortfolioSource.Controllers
         {
             Console.WriteLine("Attempting to open modal: " + id);
 
+            var viewName = PortfolioService.GetViewNameByID(id, DataFileName);
             var ModalData = PortfolioService.GetItemByID(id, DataFileName);
 
             if (ModalData.ModalID == "")
@@ -34,9 +35,9 @@ namespace PortfolioSource.Controllers
                 return NotFound();
             }
 
-            Console.WriteLine("Building partial view for " + id);
+            Console.WriteLine("Building partial view " + viewName + " for " + id);
 
-            return PartialView("_ModalLayout", ModalData);
+            return PartialView(viewName, ModalData);
         }
     }
 }

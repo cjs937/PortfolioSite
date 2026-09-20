@@ -1,0 +1,61 @@
+<div class="modal-dialog {{ModalSize}}">
+    <div class="modal-content">
+        <div class="modal-header border-0">
+            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center pb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <!-- Portfolio Modal Title-->
+                        <h1 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+                            <a class="title-link" href="{{WebsiteURL}}" target="_blank">{{Title}}</a>
+                        </h1>
+                        <br/>
+
+                        {{VideoOrImage}}
+
+                        <br/>
+                        <!-- Badges -->
+                        <div>
+                            {{Badges}}
+                        </div>
+                        <br/>
+
+                        <!--Body-->
+                        <div class="modal-body bordered">
+                            {{BodyIntro}}
+                        </div>
+
+                        <div>
+                            <!-- Carousel -->
+                            {{Gallery}}
+                        <br/>
+                        </div>
+
+                        <div class="modal-body">
+                        {{BodyMain}}
+                        <br/>
+                        </div>
+
+                        <!-- Contributions List -->
+                        {{Contributions}}
+
+                        <div class="d-flex justify-content-center gap-2">
+                            {{WebsiteButton}}
+                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer border-0">
+            {{Footer}}
+        </div>
+
+    </div>
+</div>

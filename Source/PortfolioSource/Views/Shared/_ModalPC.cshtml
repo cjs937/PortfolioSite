@@ -1,0 +1,106 @@
+@model PortfolioSource.Models.PortfolioItemViewModel
+@{
+    Layout = "_ModalLayout";
+}
+
+<!-- Portfolio Modal Title-->
+<h1 class="portfolio-modal-title text-secondary text-uppercase mb-0">
+    <a class="title-link" href="@Model.WebsiteURL" target="_blank">@Model.Title</a>
+</h1>
+<br/>
+
+@if(Model.GameplayVideoURL != "")
+{
+    <!--Gameplay Video-->
+    <div class="ratio ratio-16x9 mb-4">
+        <iframe src=@(Model.GameplayVideoURL + "?rel=0") title="Gameplay Video" allowfullscreen></iframe>
+    </div>
+}
+else
+{
+    <!--Image-->
+    <img class="img-fluid rounded mb-5" src="@Model.ImageURL" alt="..." />
+}
+<br/>
+
+<!-- Badges -->
+<div>
+    @foreach(var badgePair in Model.Badges)
+    {
+        <span class="badge @(badgePair.Value == "" ? "text-bg-secondary" : badgePair.Value) m-1 p-2">@badgePair.Key</span>
+    }
+</div>
+<br/>
+
+<!--Body-->
+<div class="modal-body bordered">
+    @Html.Raw(Model.BodyIntro)
+</div>
+
+<div>
+    <!-- Carousel -->
+    @if(Model.GalleryURLs.Count > 0)
+    {
+        <div id="modal-carousel" class="carousel slide">
+            <div class="carousel-inner">
+                @foreach(var img in Model.GalleryURLs)
+                {
+                    <div class="carousel-item @(img == Model.GalleryURLs[0] ? "active" : "")">
+                        <img src="@img" class="d-block w-100" alt="Carousel Image">
+                    </div>
+                }
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#modal-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#modal-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    }
+<br/>
+</div>
+
+<div class="modal-body">
+@Html.Raw(Model.BodyMain)
+<br/>
+</div>
+
+<!-- Contributions List -->
+@if(Model.Contributions.Count > 0)
+{
+    <h3 class="bordered">Contributions</h3>
+    <ul class="no-bullets">
+    @foreach(var contribution in Model.Contributions)
+    {
+        <li>
+            <h4 class="bordered contribution-item"><strong>@contribution.Key</strong></h4>
+
+            @if(!string.IsNullOrEmpty(contribution.Value))
+            {
+                @Html.Raw(contribution.Value);
+                <br/>
+                <br/>
+            }
+
+        </li>
+    }
+    </ul>
+}
+
+<div class="d-flex justify-content-center gap-2">
+    @if (Model.WebsiteURL != "")
+    {
+        <a href="@Model.WebsiteURL" target="_blank" class="btn btn-secondary">
+            <i class="fas fa-globe fa-fw"></i>
+            Visit Website
+        </a>
+    }
+    <button class="btn btn-primary" data-bs-dismiss="modal">
+        <i class="fas fa-xmark fa-fw"></i>
+        Close Window
+    </button>
+</div>
