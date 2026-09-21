@@ -19,14 +19,18 @@ class ModalView {
         try {
             const templatePath = `modals/modal-${modalId.toLowerCase()}.html`;
             const response = await fetch(templatePath);
-            
+            let template = null;
+
             if (!response.ok) {
-                console.error(`Template not found: ${templatePath}, using base template`);
+                console.log(`Template not found: ${templatePath}, using base template`);
                 // Fall back to base template if specific template not found
-                return await this.loadBaseTemplate();
+                template = await this.loadBaseTemplate();
+            }
+            else
+            {
+                template = await response.text();
             }
             
-            const template = await response.text();
             this.templateCache.set(modalId, template);
             return template;
         } catch (error) {

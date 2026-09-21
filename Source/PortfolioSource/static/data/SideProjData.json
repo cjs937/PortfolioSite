@@ -1,4 +1,28 @@
-[
+[   
+    {
+        "ModalID": "MG",
+        "ModalSize": "modal-xl",
+        "ImageURL": "assets/img/MG/f61cqU.PNG",
+        "Title": "Magical Girl Slime Roulette",
+        "Icon": "fas fa-wand-magic-sparkles fa-3x",
+        "Badges": {
+        "Programmer": "bg-info",
+        "Game Jam": "bg-info",
+        "C#": "bg-success",
+        "Unity": "bg-success",
+        "Git": "",
+        "2026": "bg-secondary"
+        },
+        "Contributions": {
+        "Enemy Manager": "",
+        "Enemy Steering": "",
+        "Game Loop": "",
+        "Health & Damage Systems" : "",
+        "Art, Animation, and VFX Implementation" : ""
+        },
+        "BodyIntro": "<p1>A top-down bullet hell/survival game created for <a href='https://itch.io/jam/magical-girl-game-jam-14' target='_blank'> Magical Girl Game Jam 14</a>. Shoot down slimes to get gold, and play gambling games to upgrade your powers and survive as long as possible!</p1>",
+        "WebsiteURL": "https://nintaku17.itch.io/magical-girl-slime-roulette"
+    },
     {
         "ModalID": "TT",
         "ModalSize": "modal-xl",
