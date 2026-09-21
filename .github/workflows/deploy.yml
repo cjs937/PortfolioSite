@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy static folder to GH pages
  
 on:
   push:
