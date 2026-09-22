@@ -2,7 +2,7 @@
     {
         "ModalID": "MG",
         "ModalSize": "modal-xl",
-        "ImageURL": "assets/img/MG/f61cqU.PNG",
+        "ImageURL": "assets/img/MG/f61cqU.png",
         "Title": "Magical Girl Slime Roulette",
         "Icon": "fas fa-wand-magic-sparkles fa-3x",
         "Badges": {
@@ -66,7 +66,7 @@
     {
         "ModalID": "ARACH",
         "ModalSize": "modal-xl",
-        "ImageURL": "assets/img/ARACH/Capture1.png",
+        "ImageURL": "assets/img/ARACH/Capture1.PNG",
         "Title": "Arachnotron",
         "Icon": "fas fa-spider fa-3x",
         "Badges": {
