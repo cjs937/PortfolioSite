@@ -71,8 +71,8 @@ class PortfolioModel {
             return item.GalleryURLs;
         }
         
-        // For items without explicit gallery URLs, we could implement client-side
-        // directory scanning or return empty array
+        // For items without explicit gallery URLs, return empty array
+        // Client-side cannot scan directories due to browser security
         return [];
     }
 

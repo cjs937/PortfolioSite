@@ -1,4 +1,4 @@
-[   
+[
     {
         "ModalID": "MG",
         "ModalSize": "modal-xl",
@@ -21,7 +21,15 @@
         "Art, Animation, and VFX Implementation" : ""
         },
         "BodyIntro": "<p1>A top-down bullet hell/survival game created for <a href='https://itch.io/jam/magical-girl-game-jam-14' target='_blank'> Magical Girl Game Jam 14</a>. Shoot down slimes to get gold, and play gambling games to upgrade your powers and survive as long as possible!</p1>",
-        "WebsiteURL": "https://nintaku17.itch.io/magical-girl-slime-roulette"
+        "WebsiteURL": "https://nintaku17.itch.io/magical-girl-slime-roulette",
+        "UseJsonURLS": true,
+        "GalleryURLs": [
+            "assets/img/MG/Carousel/Screenshot 2026-09-20 203835.png",
+            "assets/img/MG/Carousel/Screenshot 2026-09-20 203901.png",
+            "assets/img/MG/Carousel/Screenshot 2026-09-20 203956.png",
+            "assets/img/MG/Carousel/Screenshot 2026-09-20 204017.png",
+            "assets/img/MG/Carousel/Screenshot 2026-09-20 204121.png"
+        ]
     },
     {
         "ModalID": "TT",
@@ -48,7 +56,12 @@
         "JWT Authentication" : ""
         },
         "BodyIntro": "<p1>A full-stack task management app with projects, task lists, and tasks. Built to gain experience with React & Typescript, and explore client-server networking architecture.</p1>",
-        "WebsiteURL": "https://github.com/cjs937/TaskTracker"
+        "WebsiteURL": "https://github.com/cjs937/TaskTracker",
+        "UseJsonURLS": true,
+        "GalleryURLs": [
+            "assets/img/TT/Carousel/taskLists.PNG",
+            "assets/img/TT/Carousel/taskModal.PNG"
+        ]
     },
     {
         "ModalID": "ARACH",
@@ -73,7 +86,14 @@
         },
         "BodyIntro": "<p1>A third person action shooter where the player can traverse every surface of the environment to their advantage. As a mechanical spider-tank hellbent on revenge, use the different weapons at your disposal to take down the criminal organization S.W.A.R.M.</p1>",
         "WebsiteURL": "https://wrong-warp-games.itch.io/arachnotron",
-        "GameplayVideoURL": "https://www.youtube.com/embed/9ssWFu5WxMA?si=mvZ3HuDa7skTDFbI"
+        "GameplayVideoURL": "https://www.youtube.com/embed/9ssWFu5WxMA?si=mvZ3HuDa7skTDFbI",
+        "UseJsonURLS": true,
+        "GalleryURLs": [
+            "assets/img/ARACH/Carousel/Capture2.PNG",
+            "assets/img/ARACH/Carousel/Capture3.PNG",
+            "assets/img/ARACH/Carousel/Capture4.PNG",
+            "assets/img/ARACH/Carousel/ZOQ5z6.png"
+        ]
     },
     {
         "ModalID": "SSS",
@@ -96,7 +116,13 @@
         "Secret Code": ""
         },
         "BodyIntro": "<p1>A one-on-one platform-fighter wherein you and a friend control two brothers hell-bent on beating the piss out of each other with various toys and objects. For extra, familial effect, playing the game involves sharing a keyboard. Global Game Jam 2019 Submission</p1>",
-        "WebsiteURL": "https://gabeeddyt.itch.io/super-sibling-smasherino"
+        "WebsiteURL": "https://gabeeddyt.itch.io/super-sibling-smasherino",
+        "UseJsonURLS": true,
+        "GalleryURLs": [
+            "assets/img/SSS/Carousel/2_429.png",
+            "assets/img/SSS/Carousel/lightshot2.png",
+            "assets/img/SSS/Carousel/lightshot_1.png"
+        ]
     },
     {
         "ModalID": "BOX",
@@ -116,6 +142,11 @@
         "Interactables": ""
         },
         "BodyIntro": "<p1>GDL Quantum Jam submission. Manipulate your Physical and Astral box body to solve puzzles and go through levels.</p1>",
-        "WebsiteURL": "https://nickmagnusdev.itch.io/the-box-ghost"
+        "WebsiteURL": "https://nickmagnusdev.itch.io/the-box-ghost",
+        "UseJsonURLS": true,
+        "GalleryURLs": [
+            "assets/img/BOX/Carousel/Fhwd97.png",
+            "assets/img/BOX/Carousel/ifh8rJ.png"
+        ]
     }
 ]

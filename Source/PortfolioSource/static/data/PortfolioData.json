@@ -21,7 +21,14 @@
     },
     "BodyIntro": "<p1>A multiplayer, competitive, skydiving battle game where 2-8 players fight to own the sole parachute before everyone goes SPLAT. Use the obstacles, crazy tools, and your own frantic style to win against PC and VR players.</p1>",
     "WebsiteURL": "https://schellgames.com/portfolio/freefall",
-    "GameplayVideoURL": "https://www.youtube.com/embed/AMKpCzGLniY?si=fUxw3fXHfHCjybj0"
+    "GameplayVideoURL": "https://www.youtube.com/embed/AMKpCzGLniY?si=fUxw3fXHfHCjybj0",
+    "UseJsonURLS": true,
+    "GalleryURLs":[
+      "assets/img/FF/Carousel/freefall_screenshot_03.png",
+      "assets/img/FF/Carousel/freefall_screenshot_04.png",
+      "assets/img/FF/Carousel/freefall_screenshot_09.png",
+      "assets/img/FF/Carousel/freefall_screenshot_10.png"
+    ]
   },
   {
     "ModalID": "SS",
@@ -50,7 +57,17 @@
     },
     "BodyIntro": "<p1>Horror/Puzzle game where you, The Slayer, must break into the coffins of a fiendish vampire clan, and quietly disarm their traps without waking them. Be silent, and be precise, and you will overpower these slumbering beasts.</p1>",
     "WebsiteURL": "https://schellgames.com/portfolio/silent-slayer",
-    "GameplayVideoURL": "https://www.youtube.com/embed/imQyjBD62vc?si=Ds_opXKkTRHeEAOJ"
+    "GameplayVideoURL": "https://www.youtube.com/embed/imQyjBD62vc?si=Ds_opXKkTRHeEAOJ",
+    "UseJsonURLS": true,
+    "GalleryURLs": [
+      "assets/img/SS/Carousel/scare02.png",
+      "assets/img/SS/Carousel/silent-slayer-2.png",
+      "assets/img/SS/Carousel/silent-slayer-6.png",
+      "assets/img/SS/Carousel/silent-slayer-7.png",
+      "assets/img/SS/Carousel/spider01.png",
+      "assets/img/SS/Carousel/ssvv-3.jpg",
+      "assets/img/SS/Carousel/ssvv-8.jpg"
+    ]
   },
   {
     "ModalID": "LR",
@@ -75,7 +92,17 @@
     },
     "BodyIntro": "<p1>Prepare authentic food in three historic kitchens in this relaxing cooking simulator. Travel throughout history to master traditional recipes and discover classic ingredients, tools, and techniques. Indulge your appetite for a unique chef training experience in this realistic and satisfying game.</p1>",
     "WebsiteURL": "https://schellgames.com/portfolio/lost-recipes",
-    "GameplayVideoURL": "https://www.youtube.com/embed/y8qisSiEmPY?si=pFmWTUmN3srUt9Dr"
+    "GameplayVideoURL": "https://www.youtube.com/embed/y8qisSiEmPY?si=pFmWTUmN3srUt9Dr",
+    "UseJsonURLS": true,
+    "GalleryURLs": [
+      "assets/img/LR/Carousel/china-min-1.png",
+      "assets/img/LR/Carousel/china_dongpo_03-min.png",
+      "assets/img/LR/Carousel/greece_pestle_01-min.png",
+      "assets/img/LR/Carousel/greece_pouring_01_2021-11-30-203552_yjcq-min.png",
+      "assets/img/LR/Carousel/maya-min.png",
+      "assets/img/LR/Carousel/maya_fruitjuice_01-min.png",
+      "assets/img/LR/Carousel/maya_kitchen_03_2021-11-30-203555_jqlb-min.png"
+    ]
   },
   {
     "ModalID": "PC",
@@ -99,7 +126,15 @@
       "Flash Card Activity & Authoring Tools": ""
     },
     "BodyIntro": "<p1>A VR-based rehabilitation experience that is both calming and relaxing. Provides structured tasks and useful tools to help therapists both challenge and motivate their patients to engage more fully in their therapy</p1>",
-    "WebsiteURL": "https://schellgames.com/portfolio/pleasant-cove"
+    "WebsiteURL": "https://schellgames.com/portfolio/pleasant-cove",
+    "UseJsonURLS": true,
+    "GalleryURLs": [
+      "assets/img/PC/Carousel/ss2.png",
+      "assets/img/PC/Carousel/ss4.gif",
+      "assets/img/PC/Carousel/ss5.gif",
+      "assets/img/PC/Carousel/ss6.gif",
+      "assets/img/PC/Carousel/sunrise_toolscase-min.png"
+    ]
   },
   {
     "ModalID": "BR",
@@ -126,6 +161,14 @@
     },
     "BodyIntro": "<p1>A visual novel style game about a boys's soccer team that is thrown into a whirlwind when their coach introduces Raina, the new female member, and tells them all to get along. With the soccer season on the horizon, it's up to the player to hone their team's skills and relationships, pick sides in arguments, and directly influence how warm their new teammate's welcoming will be.</p1>",
     "WebsiteURL": "https://breakawaygame.champlain.edu/",
-    "GameplayVideoURL": "https://www.youtube.com/embed/iVpmu9ssJA4?si=94lzUAMsXVa-4jD0"
+    "GameplayVideoURL": "https://www.youtube.com/embed/iVpmu9ssJA4?si=94lzUAMsXVa-4jD0",
+    "UseJsonURLS": true,
+    "GalleryURLs": [
+      "assets/img/BR/Carousel/Capture.PNG",
+      "assets/img/BR/Carousel/Capture2.PNG",
+      "assets/img/BR/Carousel/Capture3.PNG",
+      "assets/img/BR/Carousel/layoutsys3.png",
+      "assets/img/BR/Carousel/layoutsys4.png"
+    ]
   }
 ]

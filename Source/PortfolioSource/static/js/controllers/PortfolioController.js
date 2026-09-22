@@ -83,10 +83,8 @@ class PortfolioController {
             return;
         }
 
-        // Add gallery URLs if needed
-        if (!item.UseJsonURLS) {
-            item.GalleryURLs = this.model.getGalleryURLs(item);
-        }
+        // Add gallery URLs - always use getGalleryURLs since we updated the logic
+        item.GalleryURLs = this.model.getGalleryURLs(item);
 
         // Set current modal in model
         this.model.setCurrentModal(item);

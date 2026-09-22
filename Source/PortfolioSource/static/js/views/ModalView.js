@@ -6,6 +6,7 @@ class ModalView {
     constructor() {
         this.modalTemplates = new Map();
         this.templateCache = new Map();
+        this.currentGalleryURLs = [];
     }
 
     /**
@@ -148,20 +149,25 @@ class ModalView {
 
         // Handle gallery carousel
         if (data.GalleryURLs && data.GalleryURLs.length > 0) {
+            const carouselControlWidth = 50; // px - must match the image's reserved side gap below
             const carouselHtml = `
                 <div id="modal-carousel" class="carousel slide">
                     <div class="carousel-inner">
                         ${data.GalleryURLs.map((img, index) => `
                             <div class="carousel-item ${index === 0 ? 'active' : ''}">
-                                <img src="${img}" class="d-block w-100" alt="Carousel Image">
+                                <img src="${img}" class="d-block carousel-image expandable-carousel-img" alt="Carousel Image"
+                                     style="height: 400px; width: 100%; max-width: calc(100% - ${carouselControlWidth * 2}px); object-fit: contain; cursor: pointer; margin: 0 auto;"
+                                     data-src="${img}" tabindex="-1">
                             </div>
                         `).join('')}
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#modal-carousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#modal-carousel" data-bs-slide="prev"
+                            style="background-color: transparent; border: none; width: ${carouselControlWidth}px;">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#modal-carousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#modal-carousel" data-bs-slide="next"
+                            style="background-color: transparent; border: none; width: ${carouselControlWidth}px;">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -212,7 +218,23 @@ class ModalView {
             return null;
         }
 
-        return this.populateTemplate(template, data);
+        const populatedTemplate = this.populateTemplate(template, data);
+        
+        // Store the gallery URLs for expand functionality
+        this.currentGalleryURLs = data.GalleryURLs || [];
+        
+        // Add click handlers after modal is rendered
+        setTimeout(() => {
+            const expandableImages = document.querySelectorAll('.expandable-carousel-img');
+            expandableImages.forEach(img => {
+                img.addEventListener('click', () => {
+                    const imageUrl = img.getAttribute('data-src');
+                    this.expandImage(imageUrl, img);
+                });
+            });
+        }, 100);
+        
+        return populatedTemplate;
     }
 
     /**
@@ -250,4 +272,139 @@ class ModalView {
 
         return divCol;
     }
+
+    /**
+     * Expand image to full size on click
+     */
+    expandImage(imageUrl, triggerElement) {
+        // Store current scroll position. Bootstrap modals scroll on the .modal element itself
+        // (overflow-y: auto), not the window, so that's what needs to be captured/restored -
+        // window.scrollTo alone is a no-op for a scrolled-down modal.
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        const modalElement = document.querySelector('.modal.show');
+        const modalScrollTop = modalElement ? modalElement.scrollTop : 0;
+
+        // Create modal overlay
+        const overlay = document.createElement('div');
+        overlay.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            cursor: pointer;
+        `;
+
+        // Create image container to properly constrain the image
+        const imageContainer = document.createElement('div');
+        imageContainer.style.cssText = `
+            max-width: 90%;
+            max-height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        `;
+
+        // Create expanded image
+        const expandedImg = document.createElement('img');
+        expandedImg.src = imageUrl;
+        expandedImg.style.cssText = `
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            display: block;
+        `;
+
+        // Add close button (white and more visible)
+        const closeBtn = document.createElement('button');
+        closeBtn.innerHTML = '×';
+        closeBtn.type = 'button';
+        closeBtn.style.cssText = `
+            position: absolute;
+            top: -15px;
+            right: -15px;
+            background: white;
+            color: black;
+            border: none;
+            font-size: 40px;
+            cursor: pointer;
+            padding: 5px 15px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10001;
+            opacity: 1;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        `;
+
+        // Close on click
+        const closeOverlay = () => {
+            if (document.body.contains(overlay)) {
+                document.body.removeChild(overlay);
+                // Restore scroll position
+                window.scrollTo(0, scrollPosition);
+                // Return focus to the thumbnail that opened the overlay (without letting the
+                // browser scroll it into view) instead of letting focus fall through to <body>.
+                // Otherwise Bootstrap's modal focus trap force-focuses the modal root, which
+                // shows a focus outline.
+                if (triggerElement) {
+                    triggerElement.focus({ preventScroll: true });
+                }
+                // Belt-and-suspenders: explicitly restore the modal's own scroll position, since
+                // that's the element that actually scrolls (not the window), and re-set it after
+                // the focus() call in case any browser scrolls the modal into view despite
+                // preventScroll.
+                if (modalElement) {
+                    modalElement.scrollTop = modalScrollTop;
+                }
+                document.removeEventListener('keydown', handleEscape, true);
+            }
+        };
+
+        // Close button click handler (prevent propagation)
+        closeBtn.onclick = (e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            closeOverlay();
+        };
+
+        overlay.onclick = closeOverlay;
+
+        // Prevent image click from closing
+        expandedImg.onclick = (e) => {
+            e.stopPropagation();
+        };
+
+        // Handle ESC key - close expanded image, and stop the key from ever reaching
+        // Bootstrap's modal (capture phase runs before the modal's own keydown listener).
+        // Without this, the modal still sees Escape and plays its "static backdrop" shake
+        // animation since we're not calling its hide().
+        const handleEscape = (e) => {
+            if (e.key === 'Escape' && document.body.contains(overlay)) {
+                e.stopPropagation();
+                e.preventDefault();
+                closeOverlay();
+            }
+        };
+
+        document.addEventListener('keydown', handleEscape, true);
+
+        imageContainer.appendChild(expandedImg);
+        imageContainer.appendChild(closeBtn);
+        overlay.appendChild(imageContainer);
+        document.body.appendChild(overlay);
+    }
 }
+
+
+
+
